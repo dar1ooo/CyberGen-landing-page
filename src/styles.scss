@@ -1,8 +1,11 @@
-@use 'assets/global-styles/color-palette.scss' as c;
-@import '~bootstrap/scss/bootstrap';
+@use "assets/global-styles/color-palette.scss" as c;
+@import "~bootstrap/scss/bootstrap";
 
-body{
-    margin: 0;
-    background-color: c.$Xiketic;
-    font-family: "Cyber", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: c.$Xiketic;
+  font-family: "Orbitron", sans-serif;
 }
