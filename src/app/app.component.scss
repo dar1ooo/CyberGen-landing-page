@@ -1,0 +1,1807 @@
+@use "../assets/global-styles/button-styles.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: black;
+  font-family: monospace, "Courier New", Courier;
+}
+header {
+  position: relative;
+  width: 100%;
+}
+
+/*//////////////////////HEADER FIXED STYLE/////////////////////*/
+
+#header-fixed {
+  top: 0;
+  left: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(241, 241, 0);
+  position: fixed;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 10;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px 3px rgb(53, 223, 223);
+}
+div.logo-container {
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-container #header-img {
+  width: auto;
+  height: 50px;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  min-width: 50%;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+#nav-list {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#nav-list a {
+  width: 100%;
+  margin: 15px;
+  border: 1px solid rgb(241, 241, 0);
+  border-radius: 3px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  letter-spacing: 1.5px;
+  font-weight: 640;
+}
+#nav-list a li {
+  list-style: none;
+}
+#nav-list a:hover {
+  background: rgb(28, 226, 226);
+  cursor: pointer;
+  color: black;
+  transition: background 0.4s ease;
+}
+#nav-list a:focus {
+  outline: 0;
+  box-shadow: 0.5px -0.5px 6px 1px yellow, -0.5px 1.5px 6px 1px yellow;
+  transition: box-shadow 0.1s ease;
+}
+
+/*////////END OF HEADER FIXED STYLES///////*/
+
+/*///////////////////MAIN//////////////////////////////////*/
+main {
+  top: 103px;
+  position: relative;
+  width: 100%;
+  background: black;
+  z-index: 2;
+}
+
+/*/////////////////////////////////////////*/
+
+/*//////////////////////////INTRO///////////////////////////*/
+
+#intro {
+  display: block;
+  background: black;
+  background: url(https://p4.wallpaperbetter.com/wallpaper/990/547/605/digital-art-futuristic-city-car-artwork-wallpaper-90d095b99fd6ced3f8bfa7a6bba654b8.jpg);
+  background-size: cover;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+}
+.intro-inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.intro-inner-container::after {
+  content: "";
+  width: 100%;
+  height: 100px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(
+    -180deg,
+    rgba(0, 0, 0, 0) 30%,
+    rgba(0, 0, 0, 0.8) 60%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+.intro-top-container {
+  display: flex;
+  flex-direction: column;
+}
+.intro-logo-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding-top: 0;
+}
+.intro-logo-container .intro-logo {
+  display: flex;
+  flex-direction: column;
+  /* margin: 0 auto 20px auto;*/
+}
+
+.blinky {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 7px;
+  height: 35px;
+  background: cyan;
+  animation-name: blink;
+  animation-timing-function: ease;
+  animation-duration: 1.1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes blink {
+  10% {
+    background: transparent;
+  }
+  100% {
+    background: cyan;
+  }
+}
+
+.intro-container-for-logo {
+  display: flex;
+  margin: 0 auto 0 auto;
+}
+
+.intro-h1-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+.intro-h1-container h1 {
+  display: flex;
+  justify-content: center;
+  color: rgb(227, 229, 192);
+  font-size: 0.95em;
+  font-family: monospace, "Courier New", Courier;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  width: 48%;
+  text-align: center;
+  display: block;
+  margin: 0 auto 0 auto;
+}
+.intro-bottom-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  height: 50%;
+}
+.trailer-container {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.trailer-container .trailer-frame {
+  display: block;
+  margin: 0 auto 0 auto;
+  width: 90%;
+  height: 100%;
+  border-top-right-radius: 10px;
+}
+.intro-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button.order-botton {
+  background: rgb(1, 1, 8);
+  color: rgb(221, 221, 19);
+  border: 1px solid cyan;
+  cursor: pointer;
+  box-shadow: 0.5px -0.5px 4px 2px cyan;
+  width: 280px;
+  height: 70px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1.5em;
+  letter-spacing: 3px;
+  font-weight: 550;
+  font-family: monospace, "Courier New", Courier;
+  margin: 10px auto 15px auto;
+  position: relative;
+}
+button.order-botton:hover {
+  background: rgb(241, 241, 0);
+  color: black;
+  text-shadow: -0.5px -1.3px 3px cyan;
+  cursor: pointer;
+  box-shadow: 2px -2px 6px 6px black;
+  transition: background 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-out;
+}
+
+button.order-botton:focus {
+  box-shadow: 0.5px -0.5px 4px 2px rgb(81, 211, 216);
+  border: none;
+  outline: 0;
+}
+
+.intro-button h2 {
+  color: rgb(227, 229, 192);
+  font-size: 1em;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: monospace;
+}
+.intro-bottom-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  position: relative;
+}
+.intro-bottom-logos-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: relative;
+  width: 100%;
+}
+.intro-bottom-logos-right {
+  display: block;
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+}
+.Cd-red-logo {
+  filter: hue-rotate(10deg) opacity(0.6);
+}
+.social-icon-in {
+  display: block;
+}
+.social-icon-in img {
+  width: 40px;
+  height: 30px;
+  filter: invert(100%) saturate(50%) opacity(0.7);
+}
+.social-icon-in .xb {
+  width: 110px;
+  margin-top: 22px;
+}
+.social-icon-in .pc {
+  margin-top: 20px;
+}
+.social-icon-in .ps {
+  width: 110px;
+  margin-top: 20px;
+}
+.social-icon-in .goo {
+  height: 70px;
+}
+/*/////////////////////////////////////////*/
+
+/*//////////////////////FEATURES///////////////////////*/
+
+#features {
+  background: black;
+}
+
+.features-inner-container {
+  background: url(https://www.blogenium.com/wp-content/uploads/2019/08/blogenium-cool-technologies-wallpapers-13.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.features-filter-container {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 0.9) 70%,
+    rgba(0, 0, 0, 0.85) 100%
+  );
+  margin-top: 100px;
+}
+.features-filter-container::after {
+  content: "";
+  width: 100%;
+  height: 100px;
+  display: block;
+  background: linear-gradient(
+    -180deg,
+    rgba(0, 0, 0, 0) 30%,
+    rgba(0, 0, 0, 0.8) 60%,
+    rgb(0, 0, 0, 1) 100%
+  );
+  position: relative;
+}
+.features-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 20px;
+  margin-bottom: 60px;
+  padding: 20px;
+}
+.title-bg {
+  height: 200px;
+  background: url(https://i.ytimg.com/vi/UtLun2-jOQ8/maxresdefault.jpg);
+  background-size: cover;
+  background-position: center;
+  display: block;
+  position: relative;
+  border-top-right-radius: 10px;
+}
+.title-bg::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 30px;
+  border-left: 30px solid black;
+  border-bottom: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid black;
+}
+.title-h1-feat {
+  color: white;
+  font-size: 3em;
+  font-family: monospace, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 5px;
+  text-align: right;
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  margin-left: auto;
+  width: 80%;
+}
+.title-h1-feat span {
+  text-shadow: none;
+  color: yellow;
+}
+.title-h1-feat::before {
+  content: "";
+  display: block;
+  margin-left: auto;
+  margin-bottom: 10px;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid yellow;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 10px;
+  width: 50%;
+  filter: drop-shadow(0 8px 15px rgba(0, 213, 167, 0.4));
+}
+
+.title-h1-feat::after {
+  content: "";
+  display: block;
+  margin-left: auto;
+  margin-top: 20px;
+  width: 60%;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid rgb(234, 238, 9);
+  border-top: 15px solid transparent;
+  filter: drop-shadow(0 -10px 30px rgba(0, 213, 167, 0.4));
+}
+.bg2 {
+  background: url(https://cdn.mos.cms.futurecdn.net/nETpEt2BQ6eWwPndueR6hS.jpg);
+  background-size: cover;
+  border-top-left-radius: 10px;
+  position: relative;
+}
+.bg2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 30px;
+  border-left: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-right: 30px solid black;
+  border-top: 30px solid black;
+}
+.title2 {
+  margin-left: 0;
+  text-align: left;
+}
+.title2::before {
+  content: "";
+  display: block;
+  margin-left: 0;
+  margin-bottom: 10px;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid yellow;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 10px;
+  width: 50%;
+  filter: drop-shadow(0 8px 15px rgba(234, 238, 9, 0.4));
+}
+.title2::after {
+  content: "";
+  display: block;
+  margin-left: 0;
+  width: 60%;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid rgb(234, 238, 9);
+  border-top: 15px solid transparent;
+  filter: drop-shadow(0 -8px 15px rgba(0, 213, 167, 0.4));
+}
+
+.features-card .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 1.3em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(231, 228, 228);
+  letter-spacing: 4px;
+}
+
+.d1 {
+  margin-left: 20px;
+  width: 40%;
+}
+.d2 {
+  text-align: right;
+  width: 55%;
+  margin-right: 20px;
+}
+.t2 {
+  flex-direction: row-reverse;
+  margin-top: 20px;
+}
+
+.features-bottom-container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: rgb(234, 238, 9);
+  height: 100px;
+  width: 80%;
+  position: relative;
+}
+.features-bottom-container::before {
+  content: "";
+  display: block;
+  border-left: 25px solid transparent;
+  border-right: 25px solid black;
+  border-bottom: 25px solid transparent;
+  border-top: 25px solid black;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.features-bottom-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-left: 25px solid black;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid black;
+  border-top: 25px solid transparent;
+  bottom: 0;
+  left: 0;
+}
+.bottom-feat-h1 {
+  font-family: monospace, "Courier New", Courier;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 4px;
+  padding: 20px;
+  border-top: 2px solid rgba(46, 46, 44, 0.397);
+  border-bottom: 2px solid rgba(46, 46, 44, 0.397);
+  width: 80%;
+  position: relative;
+}
+.bottom-feat-h1::before {
+  content: "17-09-2077";
+  display: block;
+  position: absolute;
+  top: -7px;
+  right: 20px;
+  font-size: 0.3em;
+  font-weight: 550;
+  color: rgba(46, 46, 44, 0.397);
+  background: rgb(234, 238, 9);
+}
+.bottom-feat-h1::after {
+  content: "V.1.43-Bm";
+  display: block;
+  position: absolute;
+  bottom: -7px;
+  left: 20px;
+  font-size: 0.3em;
+  font-weight: 550;
+  color: rgba(46, 46, 44, 0.397);
+  background: rgb(234, 238, 9);
+}
+.feat-blinky {
+  display: inline-flex;
+  position: relative;
+  top: 5px;
+  width: 20px;
+  height: 4px;
+  left: -20px;
+  background: rgba(20, 20, 20, 0.897);
+  animation: Xblinky 1.01s ease forwards infinite;
+}
+@keyframes Xblinky {
+  from {
+    background: rgba(20, 20, 20, 0.897);
+    opacity: 1;
+  }
+  to {
+    background: rgba(20, 20, 20, 0.897);
+    opacity: 0;
+  }
+}
+
+/*/////////////////////////////////////////*/
+
+/*///////////////GALLERY//////////////////*/
+
+#gallery {
+  background: black;
+  display: flex;
+  flex-direction: column;
+}
+.gal-title {
+  display: block;
+  margin: auto;
+  position: relative;
+  margin-bottom: 30px;
+}
+.gal-title::after {
+  content: "";
+  display: block;
+  width: 120%;
+  border-left: 10px solid rgb(221, 221, 19);
+  border-right: 10px solid rgb(221, 221, 19);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid rgb(221, 221, 19);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: absolute;
+  bottom: -20px;
+  left: -27.5px;
+  filter: drop-shadow(0 -8px 8px rgba(221, 221, 19, 0.3));
+}
+.gal-title h1 {
+  font-size: 3em;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgb(221, 221, 19);
+}
+#gallery .gallery-inner-container {
+  background: url(https://i11b.3djuegos.com/juegos/8873/cyberpunk/fotos/maestras/cyberpunk-4893076.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gallery-filter-container {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(0, 0, 0, 0.97) 80%,
+    rgba(0, 0, 0, 0.95) 100%
+  );
+}
+.gallery-filter-container::after {
+  content: "";
+  width: 100%;
+  height: 100px;
+  display: block;
+  background: linear-gradient(
+    -180deg,
+    rgba(0, 0, 0, 0) 30%,
+    rgba(0, 0, 0, 0.8) 60%,
+    rgb(0, 0, 0, 1) 100%
+  );
+}
+.walk-video-container {
+  box-sizing: border-box;
+  padding-top: 50px;
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.screenshots-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 97%;
+  box-sizing: border-box;
+  margin-top: 50px;
+  padding-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.screenshots-inner-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.img-container {
+  width: 100%;
+  height: 200px;
+  margin: 5px;
+  transition: width 0.5s ease-out;
+}
+.img-container img {
+  width: 90%;
+  height: 100%;
+}
+.img-container:hover {
+  width: 140%;
+  height: 120%;
+  transition: width 1s ease, height 0.1s ease-in;
+  box-shadow: -2px 2px 4px 6px black, 2px -2px 4px 6px black;
+  z-index: 4;
+  cursor: pointer;
+  border: 1 solid black;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/*/////////////////////////////////////////*/
+
+/*///////////////NEWS LETTER//////////////*/
+
+#news-letter {
+  background: black;
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+
+.news-letter-inner-container {
+  position: relative;
+  top: 60px;
+  width: 80%;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.news-bg-container {
+  background: url(https://bleedingcool.com/wp-content/uploads/2020/01/1125x682_previewbanner_cyberpunk2077announcement-1200x675.jpg);
+  background-position: bottom;
+  background-size: cover;
+  filter: brightness(70%);
+  height: 400px;
+}
+.news-info-container {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: rgba(13, 204, 204, 0.3);
+  padding: 10px 20px 10px 20px;
+  height: 100%;
+}
+
+.news-info-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-right: 20px solid rgba(0, 213, 167, 1);
+  border-top: 20px solid black;
+  border-bottom: 20px solid rgba(0, 213, 167, 1);
+  filter: hue-rotate(15deg);
+  border-left: 20px solid black;
+  top: 0;
+  left: 0;
+}
+/*.news-info-container p::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: black;
+    width: 80%;
+    height: 15px;
+    animation-name: glitch;
+    animation-duration: 0.33s;
+    animation-fill-mode: foward;
+    animation-iteration-count: 20;
+    animation-direction: alternate;
+}
+
+@keyframes glitch{
+    0%{
+        width: 30%;
+        height: 10px;
+        background: rgb(232, 240, 129);
+    }
+    30%{
+        width: 100%;
+        height: 6px;
+        bottom: 5px;
+        left: -20px;
+    }
+    50%{
+        width: 50%;
+        height: 3px;
+        bottom:-3px;
+        right: 30px;
+    }
+    80%{
+        width: 90%;
+        height: 1px;
+        bottom: -2px;
+    }
+    100%{
+        width:30%;
+        height: 5px;
+        background: rgb(228, 227, 175);
+        left: 20px;
+    }
+}
+*/
+.news-info-container h1 {
+  color: rgba(248, 83, 83, 0.6);
+  letter-spacing: 3px;
+  font-weight: bolder;
+  font-size: 6em;
+  margin-top: 20px;
+  position: relative;
+}
+.news-info-container h1::before {
+  content: "NEWS LETTER";
+  position: absolute;
+  color: rgb(253, 253, 14);
+  left: 5px;
+}
+.news-info-container p {
+  font-size: 1em;
+  font-weight: 530;
+  letter-spacing: 2px;
+  text-align: left;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 41);
+  width: 85%;
+}
+form {
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.email-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: Roboto, monospace, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(43, 163, 163);
+}
+.email-container::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 15px solid black;
+  border-left: 10px solid transparent;
+  border-top: 20px solid transparent;
+  border-right: 22.5px solid transparent;
+  border-bottom: 20px solid rgb(28, 226, 226);
+  top: 5px;
+  right: 229px;
+  transform: rotate(58deg);
+}
+.email-field-box[type="email"] {
+  width: 40vw;
+  height: 70px;
+  border: 4px solid rgb(13, 204, 204);
+  box-sizing: border-box;
+  padding: 0 10px 0 10px;
+  background: black;
+  color: rgb(16, 224, 224);
+  font-size: 1em;
+  font-family: Roboto, monospace, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 4px;
+  transition: font-size 2s ease;
+  display: block;
+  margin-top: 20px;
+  position: relative;
+}
+
+.age-check[type="checkbox"] {
+  margin-top: 10px;
+  width: 15px;
+  height: 15px;
+  -webkit-appearance: none;
+  border: 2px solid rgb(13, 204, 204);
+  border-radius: 4px;
+  font-family: Roboto, monospace, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+}
+.age-check[type="checkbox"]:focus {
+  background: cyan;
+}
+.check-info {
+  color: rgb(175, 174, 174);
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.submit-button {
+  width: 40%;
+  height: 50px;
+  background: rgb(13, 204, 204);
+  color: black;
+  border: 4px solid rgb(13, 204, 204);
+  font-family: Roboto, monospace, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.3em;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  display: block;
+  margin-top: 20px;
+  position: relative;
+}
+.submit-button::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 10px solid black;
+  border-left: 10px dashed rgb(13, 204, 204);
+  border-bottom: 10px dashed rgb(13, 204, 204);
+  position: absolute;
+  right: -4px;
+  bottom: 26px;
+}
+.submit-button:hover {
+  cursor: pointer;
+  background: black;
+  color: cyan;
+  transition: background 0.7s ease-in-out;
+}
+/*///////////////////////////////////////*/
+
+/*//////////////////////HARDWARE///////////////////////*/
+#hardware {
+  background: black;
+  width: 100%;
+  position: relative;
+}
+.hardware-title-container {
+  background: rgb(241, 241, 0);
+  height: 80px;
+  width: 60%;
+  position: relative;
+  left: 28%;
+  box-sizing: border-box;
+  padding: 10px 15px 10px 15px;
+}
+.hardware-title-container::before {
+  content: "";
+  display: block;
+  border-left: 20px solid transparent;
+  border-right: 20px solid black;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  top: -20px;
+  left: -20px;
+}
+.hardware-title-container h1 {
+  color: black;
+  font-size: 3em;
+  font-family: monospace, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  display: block;
+  width: 95%;
+  margin: 3px auto 5px auto;
+  border-top: 2px solid rgba(46, 46, 44, 0.397);
+  border-bottom: 2px solid rgba(46, 46, 44, 0.397);
+  position: relative;
+}
+.hardware-title-container h1::before {
+  content: "17-09-2077";
+  display: block;
+  font-size: 0.2em;
+  position: absolute;
+  color: rgba(46, 46, 44, 0.397);
+  background: rgb(241, 241, 0);
+  top: -7px;
+  right: 20px;
+  font-weight: bolder;
+}
+.hardware-title-container h1::after {
+  content: "V.1.43.BM";
+  display: block;
+  font-size: 0.2em;
+  position: absolute;
+  color: rgba(46, 46, 44, 0.397);
+  background: rgb(241, 241, 0);
+  bottom: -5px;
+  left: 20px;
+  font-weight: bolder;
+}
+.hardware-inner-container {
+  background: url(https://www.cyberpunk.net/build/images/home/cover-1440-en-9aa8b9b6.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 600px;
+  position: relative;
+}
+.hardware-inner-container::before {
+  content: "";
+  display: block;
+  width: 60px;
+  position: absolute;
+  right: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid black;
+  border-bottom: 30px solid transparent;
+  border-top: 30px solid black;
+}
+.hardware-inner-container::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 65%;
+  right: 15%;
+  border: 40px solid black;
+  bottom: 0;
+  border-right: 40px solid transparent;
+  border-left: 40px solid transparent;
+  border-top: 40px solid transparent;
+}
+.hardware-filter-container {
+  background: rgb(6, 212, 212);
+  width: 40%;
+  height: 80%;
+  border: 6px solid black;
+  border-top-left-radius: 10px;
+  margin-left: auto;
+  margin-right: 20px;
+  position: relative;
+  top: 50px;
+}
+.hardware-filter-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: rgb(241, 241, 0);
+  border-right: 6px solid black;
+  transform: rotate(49deg);
+  top: -32px;
+  left: -29px;
+}
+.hardware-filter-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 50px;
+  background: rgb(241, 241, 0);
+  border-left: 6px solid black;
+  transform: rotate(49deg);
+  bottom: -21px;
+  right: -10px;
+}
+.hardware-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  position: relative;
+}
+.hardware-info-container::after {
+  content: "";
+  display: block;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 3px solid black;
+  border-radius: 10px;
+  width: 86%;
+  position: absolute;
+  bottom: -50px;
+  left: 10px;
+  filter: drop-shadow(0 -6px 10px cyan);
+}
+.hardware-info {
+  display: block;
+  margin: 40px 20px auto;
+  height: 400px;
+  background: inherit;
+  box-sizing: border-box;
+  border-top: 2px solid rgba(8, 8, 8, 0.788);
+  border-bottom: 2px solid rgba(8, 8, 8, 0.788);
+  padding: 20px;
+  position: relative;
+}
+.hardware-info::before {
+  content: "Loading...";
+  display: block;
+  position: absolute;
+  letter-spacing: 3px;
+  font-size: 0.8em;
+  font-weight: bolder;
+  color: rgba(46, 46, 44, 0.897);
+  background: rgb(2, 212, 212);
+  top: -12px;
+  right: 30px;
+}
+.hardware-info::after {
+  content: "V.1.4";
+  display: block;
+  position: absolute;
+  letter-spacing: 3px;
+  font-size: 0.7em;
+  font-weight: bolder;
+  color: rgba(46, 46, 44, 0.897);
+  background: rgb(2, 212, 212);
+  bottom: -6px;
+  left: 20px;
+}
+.specs-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.hardware-info .specs-list li {
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  margin: 10px 0 10px 0;
+  list-style-type: circle;
+}
+.specs-list li span {
+  color: rgb(231, 231, 231);
+}
+/*///////////////////////////////*/
+
+/*/////////////////////ORDER NOW/////////////////////////////*/
+
+#order-now {
+  width: 100%;
+  background: black;
+  padding-top: 30px;
+  height: 800px;
+}
+.order-now-inner-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+  background: black;
+  box-sizing: border-box;
+  margin-top: 30px;
+}
+.order-now-inner-container h1 {
+  font-size: 4em;
+  color: rgb(2, 241, 246);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  /* text-shadow: 0 1px 3px yellow;*/
+}
+.shop-title::after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 0;
+  border: 5px solid rgb(19, 190, 190);
+  border-top: 20px solid transparent;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  filter: drop-shadow(0 -8px 20px rgb(30, 226, 226));
+}
+.order-now-filter-container {
+  background: black;
+  width: 90%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+  box-sizing: border-box;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+
+.shop {
+  margin: 20px;
+  width: 60%;
+  height: 100%;
+  background: black;
+  position: relative;
+  border: 2px solid black;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.shop-img-container {
+  width: 100%;
+  height: 70%;
+  position: relative;
+}
+.shop-a {
+  margin-right: 5%;
+}
+.shop-a,
+.shop-b {
+  perspective: 1600px;
+}
+
+.shop-a img {
+  border-top-right-radius: 10px;
+  transform: rotatey(30deg);
+  box-shadow: 0 0 4px 7px rgba(2, 241, 246, 0.7);
+  transition: transform 0.7s ease-out, filter 0.6s ease-out;
+}
+.shop-b img {
+  border-top-left-radius: 10px;
+  transform: rotatey(-30deg);
+  box-shadow: 0 0 4px 7px rgba(2, 241, 246, 0.7);
+  transition: transform 0.7s ease-out, filter 0.6s ease-out;
+}
+.shop-a img:hover,
+.shop-b img:hover {
+  transform: rotate(0deg);
+  filter: drop-shadow(0 5px 8px rgba(17, 212, 212, 0.6));
+  transition: transform 0.7s ease-in, filter 0.6s ease-in;
+  cursor: pointer;
+}
+.shop-img-container img {
+  width: 100%;
+  height: 100%;
+}
+.shop-button {
+  width: 50%;
+  height: 50px;
+  display: block;
+  margin: 60px auto 10px auto;
+  border: none;
+  background: rgb(4, 175, 175);
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+  font-family: Roboto, monospace, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 800;
+  position: relative;
+  border-bottom-right-radius: 5px;
+  transition: filter 0.6s ease-out;
+}
+.shop-button:hover {
+  cursor: pointer;
+  background: rgb(241, 241, 0);
+  color: black;
+  filter: drop-shadow(35px 35px 10px rgba(0, 255, 255, 0.1));
+  transition: color 0.4s ease, filter 0.2s ease-in;
+}
+.shop-button:focus {
+  outline: 0;
+  box-shadow: inset 0 0 3px 3px cyan;
+}
+.after-button:focus {
+  outline: 0;
+}
+.shop-button::after {
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 15px solid yellow;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid black;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -15px;
+  right: -15px;
+}
+.after-button {
+  position: relative;
+}
+.after-button::after {
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 15px solid yellow;
+  border-left: 15px solid transparent;
+  border-right: 15px solid black;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 22px;
+  right: 112px;
+}
+/*////////////////////////////*/
+
+#foot {
+  background: cyan;
+  width: 100%;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.footer-bottom-container::after {
+  display: block;
+  content: "";
+  width: 30%;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid black;
+  position: absolute;
+  top: -40px;
+  left: 33%;
+}
+.footer-bottom-container {
+  position: relative;
+  height: 90px;
+  width: 100%;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.foot-inner-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  padding: 40px;
+  background: rgb(233, 233, 14);
+  position: relative;
+}
+
+.foot-inner-container::after {
+  display: block;
+  content: "";
+  width: 60%;
+  border: 40px solid black;
+  position: absolute;
+  left: 17%;
+  right: 0;
+  top: 0px;
+  border-right: 40px solid transparent;
+  border-left: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+}
+.foot-inner-info {
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 1.1em;
+}
+.footer-links li {
+  list-style: none;
+}
+.footer-links li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+.footer-links li a:hover {
+  cursor: pointer;
+  border-bottom: 2px solid black;
+  filter: drop-shadow(0 10px 7px rgba(0, 0, 0, 0.9));
+  transition: filter 0.3s ease;
+}
+.foot-inner-social {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+.foot-inner-social h2 {
+  display: block;
+  margin: 0 auto 30px auto;
+  font-size: 1.5em;
+  letter-spacing: 4px;
+  font-weight: bolder;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.social-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+.social-container::after {
+  content: "";
+  display: block;
+  width: 100px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid rgb(233, 233, 14);
+  transform: rotate(135deg);
+  position: absolute;
+  right: 13px;
+  bottom: -100px;
+  z-index: 3;
+}
+
+.social-icon {
+  display: block;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.cy img,
+.fa img,
+.tw img,
+.yt img {
+  width: 50px;
+  height: 40px;
+}
+.cy,
+.fa,
+.tw {
+  perspective: 100px;
+}
+.cy:hover {
+  transform: rotate(10deg);
+  transition: transform 0.5s ease-in 0.1s;
+}
+.fa:hover {
+  transform: rotateY(60deg);
+}
+.foot-inner-logo {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+.footer-logo-container {
+  margin-top: 20px;
+  display: block;
+}
+.footer-logo-container a:hover {
+  cursor: pointer;
+}
+.footer-logo-container img {
+  width: 300px;
+  transform: scale(0.7);
+}
+
+.footer-bottom-container::before {
+  content: "";
+  display: block;
+  border-left: 150px solid transparent;
+  border-right: 150px solid black;
+  border-bottom: 150px solid black;
+  border-top: 150px solid transparent;
+  position: absolute;
+  right: 0;
+  top: -300px;
+}
+
+.foot-bottom-logo {
+  display: block;
+  margin: 0 auto 0 auto;
+  transform: scale(0.5);
+  filter: brightness(40%);
+}
+
+/*//////////////////////////////////////////////////////////////////*/
+/*////////////////MEDIA QUERIES FOR THE ENTIRE PAGE/////////////////*/
+/*/////////////////////////////////////////////////////////////////*/
+
+@media only screen and (max-width: 700px) {
+  #header-fixed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    position: fixed;
+  }
+  .logo-container {
+    position: relative;
+  }
+  .logo-container #header-img {
+    width: auto;
+    height: 50px;
+    transition: height 0.5s ease-in-out 0.1s;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  nav {
+    display: none;
+  }
+  #content-container {
+    position: relative;
+    top: 80px;
+    transition: top 1s ease-in-out;
+  }
+
+  /*///////INTRO////////*/
+  #intro {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    max-height: 650px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  .intro-logo-container {
+    margin-top: 70px;
+  }
+  .intro-logo {
+    width: 100%;
+    height: auto;
+  }
+  .intro-h1-container h1 {
+    display: flex;
+    width: 90%;
+    font-size: 0.6em;
+  }
+  .intro-bottom-container {
+    width: 100%;
+    height: 70%;
+    margin-top: 140px;
+  }
+  button.order-botton {
+    font-size: 0.8em;
+    width: 150px;
+    height: 50px;
+  }
+  /*INTRO TRAILER IN DISPLAY NONE/////////////////////////*/
+  .trailer-container {
+    display: none;
+  }
+  .intro-bottom-logos {
+    width: 100%;
+    display: block;
+  }
+  .social-icon-in img {
+    width: 20px;
+    height: 15px;
+  }
+  .social-icon-in .goo {
+    height: 60px;
+    width: 25px;
+    margin-right: 10px;
+  }
+  .intro-bottom-logos-right {
+    display: block;
+    position: absolute;
+    bottom: 30px;
+  }
+  .Cd-red-logo {
+    transform: scale(0.8);
+  }
+  /*///////FEATURES///////////////*/
+  #features {
+    margin-top: -50px;
+  }
+  .features-h1-container {
+    width: 95%;
+    height: 30px;
+    position: relative;
+  }
+
+  .features-card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 0;
+    padding-top: 20px;
+  }
+
+  .title-bg {
+    height: 200px;
+  }
+  .title-h1-feat {
+    font-size: 2.52em;
+  }
+  .title-h1-feat::before {
+    margin-bottom: 20px;
+  }
+  .title-h1-feat::after {
+    margin-top: 27px;
+  }
+  .features-card .description {
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 0.8em;
+    padding: 0;
+    width: 85%;
+  }
+  .description span {
+    width: 15px;
+    height: 15px;
+  }
+  .bg2 {
+    font-size: 0.8em;
+  }
+
+  .title2::before {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  .title2::after {
+    margin-top: 15px;
+  }
+  .d2 {
+    display: block;
+    margin: auto;
+  }
+  .features-bottom-container {
+    width: 90%;
+    height: 80px;
+    padding: 10px;
+  }
+  .bottom-feat-h1 {
+    font-size: 1em;
+    padding: 5px;
+    width: 75%;
+  }
+  .feat-blinky {
+    width: 10px;
+    height: 2px;
+  }
+  /*/////////////////GALLERY/////*/
+
+  .gal-title h1 {
+    font-size: 2em;
+  }
+  .gallery-video {
+    width: 95% !important;
+    height: 315px !important;
+  }
+  .screenshots-inner-container {
+    overflow-x: auto;
+  }
+  .img-container img {
+    width: 100%;
+    height: 50%;
+  }
+
+  /*////////NEWS LETTER////////*/
+  #news-letter {
+    width: 100%;
+    height: 750px;
+  }
+  .news-letter-inner-container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    top: 0;
+  }
+  .news-bg-container {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .news-info-container {
+    width: 100%;
+    padding: 10px 5px 10px 5px;
+  }
+  .news-info-container h1 {
+    font-size: 4em;
+  }
+  .news-info-container p {
+    font-size: 0.8em;
+  }
+  form {
+    margin-top: 30px;
+  }
+  .email-container {
+    width: 90%;
+    margin: auto;
+  }
+  .email-container::after {
+    position: absolute;
+    right: -2px;
+    bottom: 134px;
+  }
+  .email-field-box[type="email"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    height: 50px;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+  }
+  .check-info {
+    width: 90%;
+    font-size: 0.6em;
+  }
+  .submit-button {
+    height: 40px;
+    font-size: 1em;
+  }
+  .submit-button::after {
+    position: absolute;
+    bottom: 16px;
+  }
+  /*///////////HARDWARE//////////*/
+  .hardware-title-container {
+    width: 80%;
+    height: 70px;
+    left: 0;
+    padding: 5px 8px 5px 8px;
+  }
+  .hardware-title-container h1 {
+    font-size: 1.3em;
+    text-align: right;
+  }
+  .hardware-inner-container {
+    background-position: right;
+  }
+  .hardware-filter-container {
+    width: 90%;
+  }
+  .hardware-info .specs-list li {
+    font-size: 1em;
+  }
+  /*/////SHOP////////////////*/
+  #order-now {
+    padding-top: 0;
+    height: 900px;
+  }
+  .order-now-inner-container h1 {
+    font-size: 2.5em;
+  }
+  .order-now-filter-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .shop {
+    width: 90%;
+  }
+  .shop-img-container {
+    height: 100%;
+  }
+  .shop-a img,
+  .shop-b img {
+    box-shadow: 0 0 7px rgb(2, 241, 246);
+  }
+  .shop-a img:hover,
+  .shop-b img:hover {
+    filter: drop-shadow(0 3px 5px rgb(32, 199, 199));
+  }
+  .shop-button {
+    font-size: 0.8em;
+    height: 55px;
+    padding: 5px;
+  }
+  /*/////FOOTER////////////*/
+  /*effectos descativados para el fondo*/
+  .footer-bottom-container::before {
+    display: none;
+  }
+  .social-container::after {
+    display: none;
+  }
+  /*efectos de arriba desactivados*/
+  .footer-inner-info {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  .footer-links {
+    font-size: 0.8em;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .footer-links li {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .foot-inner-social h2 {
+    font-size: 1em;
+  }
+  .cy img,
+  .fa img,
+  .tw img,
+  .yt img {
+    width: 30px;
+    height: 20px;
+  }
+  .footer-logo-container {
+    transform: scale(0.8);
+  }
+  .foot-bottom-logo {
+    transform: scale(0.2);
+  }
+}

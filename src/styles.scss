@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'assets/global-styles/color-palette.scss' as c;
+@import '~bootstrap/scss/bootstrap';
+
+body{
+    margin: 0;
+    background-color: c.$Xiketic;
+    font-family: "Cyber", sans-serif;
+}
