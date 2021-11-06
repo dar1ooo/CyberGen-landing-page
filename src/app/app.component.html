@@ -1,166 +1,121 @@
-<!-- <button class="cybr-btn">
-  Cyber<span aria-hidden>_</span>
-  <span aria-hidden class="cybr-btn__glitch">Cyber_</span>
-  <span aria-hidden class="cybr-btn__tag">R25</span>
-</button>
-<button class="cybr-btn cybr-btn-purple">
-  Mint<span aria-hidden>_</span>
-  <span aria-hidden class="cybr-btn__glitch">Buttons_</span>
-  <span aria-hidden class="cybr-btn__tag">R25</span>
-</button>  -->
-<div class="main-content">
-  <video
-    playsinline
-    autoplay
-    muted
-    loop
-    poster="../assets/images/robot-hand.png"
-    id="bgvid"
-    class="video"
-  >
-    <source src="../assets/videos/robot-hand.webm" type="video/webm" />
-    <source src="../assets/videos/robot-hand.mp4" type="video/mp4" />
-  </video>
-  <div class="overlayText">
-    <div class="topText">CyberGen NFT</div>
-  </div>
-  <div class="main-title">
-    <h1>CyberGen NFT</h1>
-    <p>This text block is vertically centered.</p>
-    <p>Horizontally, too, if the window is wide enough.</p>
-  </div>
-</div>
 <div class="main-content">
   <header id="header">
     <section id="header-fixed">
       <nav id="nav-bar">
         <ul id="nav-list">
-          <a href="#features" class="nav-link">
-            <li>Features</li>
+          <a
+            onClick="document.getElementById('about-us').scrollIntoView();"
+            class="nav-link"
+          >
+            <li>About Us</li>
           </a>
-          <a href="#gallery" class="nav-link">
+          <a
+            onClick="document.getElementById('gallery').scrollIntoView();"
+            class="nav-link"
+          >
             <li>Gallery</li>
-          </a>
-          <a href="#hardware" class="nav-link">
-            <li>Hardware</li>
-          </a>
-          <a href="#order-now" class="nav-link">
-            <li>Shop</li>
           </a>
         </ul>
       </nav>
     </section>
   </header>
-  <main id="content-container">
-    <section id="features">
-      <div class="features-inner-container">
-        <div class="features-filter-container">
-          <div class="features-card">
-            <div class="title-bg">
-              <h1 class="title-h1-feat">DIVE INTO <span>NIGHT CITY</span></h1>
-            </div>
-            <div class="description d1">
-              <p>
-                Cyberpunk 2077 takes place in Night City, a giagantic open world
-                merged in chaos that you can fully explore.
-              </p>
-              <br />
-            </div>
-          </div>
-          <div class="features-card t2">
-            <div class="title-bg bg2">
-              <h1 class="title-h1-feat title2">
-                PLAY AS AN <span>OUTLAW MERCENARY</span>
-              </h1>
-            </div>
-            <div class="description d2">
-              <p>
-                Play as an outlaw mercenary. Custumize your character's
-                abilities and play modes, allowing you to be a stealth killer or
-                a solo man army shooting your way throughout the game.
-              </p>
-            </div>
-          </div>
-          <div class="features-bottom-container">
-            <h1 class="bottom-feat-h1">
-              Are you ready for an update ?
-              <span class="blinky feat-blinky"></span>
-            </h1>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="news-letter">
-      <div class="news-letter-inner-container">
-        <div class="news-bg-container">
-          <div class="news-info-container">
-            <h1>NEWS LETTER</h1>
-            <p>
-              Sind up to Cyberpunk 2077 news letter. Don't let your software get
-              off date.
-            </p>
-          </div>
-        </div>
-        <form action="https://www.freecodecamp.com/email-submit" id="form">
-          <div class="email-container">
-            <label for="email">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                class="email-field-box"
-                placeholder="Enter your email"
-              />
-            </label>
-            <label for="checkbox" class="check-info">
-              <input
-                type="checkbox"
-                name="age-check"
-                value="18"
-                id="checkbox"
-                class="age-check"
-                required
-              />
-              I would like to receive news, special offers and other information
-              from CD PROJEKT and I am 16 years old or older.
-            </label>
-            <br />
-            <input type="submit" id="submit" style="display: none" />
-            <button class="submit-button">Send</button>
-          </div>
-        </form>
-      </div>
-    </section>
-    <section id="hardware">
-      <div class="hardware-title-container">
-        <h1>What do you get ?<span class="blinky feat-blinky"></span></h1>
-      </div>
-        <div class="hardware-filter-container">
-          <div class="hardware-info-container">
-            <div class="hardware-info">
-              <ul class="specs-list">
-                <li>
-                  <span>CPU</span>: Intel Core i5-4670k, 3.4GHz/AMD Ryzen R5
-                  1600
-                </li>
-                <li><span>RAM</span>: 16GB</li>
-                <li><span>HDD</span>: 70GB Space</li>
-                <li>
-                  <span>GPU</span>: AMD Radeon Rx Vega 64 8GB/ Nvidia Geforce
-                  GTX 1070
-                </li>
-                <li><span>OS</span>: Win 10 64bits</li>
-                <li><span>DIRECTX</span>: Version 11</li>
-                <li><span>SCREEN RESOLUTION</span>: 1080p</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-    </section>
-    <section id="order-now">
-      <div class="order-now-inner-container">
-        <h1 class="shop-title"><span>CYBER</span>-SHOP</h1>
-      </div>
-    </section>
-  </main>
+  <video playsinline autoplay muted loop class="video">
+    <source src="../assets/videos/robot-hand.webm" type="video/webm" />
+  </video>
+  <h1 class="main-title">Welcome to CyberGen City</h1>
 </div>
+
+<div class="section" id="about-us">
+  <div class="container">
+    <div class="header-wrapper">
+      <div class="react-reveal heading-wrapper">
+        <h1>Genesis I</h1>
+      </div>
+      <p width="100%" class="react-reveal">
+        We are a growing Community focused around honing skills relevant to the
+        blockchain world and connecting the right people to boost this
+        technology to the next level! Here are a couple more details:
+      </p>
+      <ul>
+        <li>
+          <span>
+            We are creating a limited series of 500 AI-Generated NFTs with a
+            Synthwave/Cyberpunk feel.
+          </span>
+        </li>
+        <li>
+          <span>
+            Our community is our biggest focus. We encourage you to develop
+            yourself and want to hear your feedback to improve our project as
+            well!
+          </span>
+        </li>
+        <li>
+          <span>
+            We are an open-development project, meaning you get to see how we
+            work on CyberGen every step of the way!
+          </span>
+        </li>
+        <li>
+          <span>
+            We will be hosting regular giveaways and customised NFTs to win for
+            your engagement
+          </span>
+        </li>
+      </ul>
+      <div>
+        <button (click)="openDiscord()" class="cybr-btn">
+          Discord<span aria-hidden></span>
+          <span aria-hidden class="cybr-btn__glitch">Discord</span>
+          <span aria-hidden class="cybr-btn__tag">R25</span>
+        </button>
+        <button (click)="showErrorMessage()" class="cybr-btn cybr-btn-purple">
+          Mint<span aria-hidden>_</span>
+          <span aria-hidden class="cybr-btn__glitch">Mint</span>
+          <span aria-hidden class="cybr-btn__tag">R25</span>
+        </button>
+        <div *ngIf="showMintingNotPossible" class="warning-message">
+          Minting is not possible yet
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<main id="content-container">
+  <footer id="foot">
+    <div class="foot-inner-container">
+      <div class="foot-inner-info">
+        <ul class="footer-links">
+          <li><a href="">Contact</a></li>
+          <li><a href="">Cyberpunk Forum</a></li>
+          <li><a href="">Cd Project Red</a></li>
+          <li><a href="">Job Oportunities</a></li>
+          <li><a href="">Terms of Use & Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="foot-inner-social">
+        <h2>Find Us on</h2>
+        <div class="social-container">
+          <div class="social-icon">
+            <a href="https://discord.gg/3D6RN4k3FB" target="”_blank”"
+              ><img src="../assets/images/icons/discord.png" alt="discord icon"
+            /></a>
+          </div>
+          <div class="social-icon">
+            <a href="https://www.instagram.com/cybergennft/" target="”_blank”"
+              ><img
+                src="../assets/images/icons/instagram.png"
+                alt="instagram icon"
+            /></a>
+          </div>
+          <div class="social-icon">
+            <a href="https://twitter.com/CyberGenNFT" target="”_blank”"
+              ><img src="../assets/images/icons/twitter.png" alt="twitter icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-container"></div>
+  </footer>
+</main>
