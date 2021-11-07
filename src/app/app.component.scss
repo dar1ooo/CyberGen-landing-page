@@ -216,7 +216,7 @@ div.logo-container {
 }
 .foot-inner-social h2 {
   display: block;
-  margin: 0 auto 30px auto;
+  margin: 30px auto 30px auto;
   font-size: 1.5em;
   letter-spacing: 4px;
   font-weight: bolder;
@@ -273,4 +273,52 @@ div.logo-container {
 .warning-message {
   color: red;
   text-align: center;
+}
+
+/* WORK */
+.single-card:hover {
+  cursor: pointer;
+}
+.work-wrapper {
+  color: #fff;
+  width: 87vw;
+  margin: 100px 0px 200px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.work-wrapper .grid {
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+.card {
+  width: 250px;
+  height: 250px;
+  overflow: hidden !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.card .content {
+  font-family: "Open Sans";
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateY(20 px);
+  transform: translateY(20 px);
+}
+.card .content h1 {
+  font-size: 14px;
+  color: #fff;
+}
+.card .content p {
+  font-size: 10px;
+  color: #fff;
+  margin-bottom: 20px;
 }
