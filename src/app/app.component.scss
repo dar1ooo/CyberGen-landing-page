@@ -240,8 +240,8 @@ div.logo-container {
   border-bottom: 30px solid rgb(233, 233, 14);
   transform: rotate(135deg);
   position: absolute;
-  right: 13px;
-  bottom: 0px;
+  right: 15px;
+  bottom: -13px;
   z-index: 3;
 }
 
@@ -272,53 +272,37 @@ div.logo-container {
 }
 .warning-message {
   color: red;
+  font-size: 20px;
   text-align: center;
 }
 
-/* WORK */
-.single-card:hover {
-  cursor: pointer;
-}
-.work-wrapper {
+/* art */
+.art-wrapper {
   color: #fff;
   width: 87vw;
-  margin: 100px 0px 200px 0px;
+  margin: 100px 0px 70px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.work-wrapper .grid {
+.art-wrapper .grid {
   display: grid;
   margin-top: 20px;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 10px;
 }
-.card {
+.nft {
   width: 250px;
   height: 250px;
   overflow: hidden !important;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.4s;
   background-size: cover;
-  background-position: 50%;
-}
-
-.card .content {
-  font-family: "Open Sans";
-  text-align: center;
-  padding: 10px;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
-  -webkit-transform: translateY(20 px);
-  transform: translateY(20 px);
-}
-.card .content h1 {
-  font-size: 14px;
-  color: #fff;
-}
-.card .content p {
-  font-size: 10px;
-  color: #fff;
-  margin-bottom: 20px;
+  &:hover {
+    transform: scale(
+      1.2
+    );
+  }
 }
