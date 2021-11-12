@@ -1,22 +1,10 @@
 @use "../assets/global-styles/button-styles.scss";
 @use "../assets/global-styles/color-palette.scss" as c;
-
-.video {
-  height: 100vh;
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
 .main-title {
   color: #ffff00;
   padding: 1em;
-  position: absolute;
-  top: 50%;
   font-size: 100px;
-  left: 50%;
   -webkit-text-stroke: 2px c.$Xiketic;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
 }
 
 .section {
@@ -32,45 +20,6 @@
   align-items: center;
   justify-content: center;
 }
-.header-wrapper {
-  width: 80vw;
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #fff;
-  gap: 90px;
-}
-
-.header-wrapper h2 {
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.header-wrapper p {
-  color: #fff;
-  font-size: 1.9rem;
-  width: 82%;
-  text-align: center;
-  overflow: hidden;
-}
-
-.header-wrapper .heading-wrapper h1 {
-  color: #fff;
-  font-size: 7rem;
-  text-align: center;
-  line-height: 20px;
-  margin-top: 100px;
-}
-.header-wrapper ul {
-  width: 50%;
-  margin-bottom: 50px;
-  font-size: 1.9rem;
-  li {
-    margin: 30px 0px;
-    line-height: 30px;
-  }
-}
 
 #header-fixed {
   top: 0;
@@ -81,19 +30,6 @@
   z-index: 10;
   box-sizing: border-box;
   position: absolute;
-}
-div.logo-container {
-  margin: 5px;
-  display: flex;
-  justify-content: center;
-}
-
-.logo-container #header-img {
-  width: auto;
-  height: 50px;
-  margin-top: 5px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #nav-list {
@@ -269,40 +205,4 @@ div.logo-container {
   position: absolute;
   right: 0;
   top: -300px;
-}
-.warning-message {
-  color: red;
-  font-size: 20px;
-  text-align: center;
-}
-
-/* art */
-.art-wrapper {
-  color: #fff;
-  width: 87vw;
-  margin: 100px 0px 70px 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.art-wrapper .grid {
-  display: grid;
-  margin-top: 20px;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 10px;
-}
-.nft {
-  width: 250px;
-  height: 250px;
-  overflow: hidden !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.4s;
-  background-size: cover;
-  &:hover {
-    transform: scale(
-      1.2
-    );
-  }
 }
