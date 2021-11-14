@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { GalleryComponent } from './components/gallery/cyber.gallery.component';
 import { AiExplanationComponent } from './components/ai-explanation/cyber.ai.component';
 import { AboutUsComponent } from './components/aboutus/cyber.aboutus.component';
+import { TeamComponent } from './components/team/team.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { AboutUsComponent } from './components/aboutus/cyber.aboutus.component';
     GalleryComponent,
     AiExplanationComponent,
     AboutUsComponent,
+    TeamComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
@@ -22,6 +24,7 @@ import { AboutUsComponent } from './components/aboutus/cyber.aboutus.component';
     GalleryComponent,
     AiExplanationComponent,
     AboutUsComponent,
+    TeamComponent,
   ],
 })
 export class AppModule {}
