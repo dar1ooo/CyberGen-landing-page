@@ -15,218 +15,42 @@
           >
             <li>Gallery</li>
           </a>
+          <a
+            onClick="document.getElementById('aiexpl').scrollIntoView({behavior: 'smooth'});"
+            class="nav-link"
+          >
+            <li>AI-explained</li>
+          </a>
+          <a
+            onClick="document.getElementById('team').scrollIntoView({behavior: 'smooth'});"
+            class="nav-link"
+          >
+            <li>Our Team</li>
+          </a>
         </ul>
       </nav>
     </section>
   </header>
-  <video autoplay playsinline muted loop class="video">
-    <source src="../assets/videos/robot-hand.webm" type="video/webm" />
-  </video>
-  <h1 class="main-title">Welcome to CyberGen City</h1>
-</div>
-
-<div class="section" id="about-us">
-  <div class="container">
-    <div class="header-wrapper">
-      <div class="heading-wrapper">
-        <h1>Genesis I</h1>
-      </div>
-      <h2>
-        With <span style="color: red">❤</span> from
-        <a href="#" style="color: yellow">CyberGen</a>
-      </h2>
-      <p width="100%">
-        We are a growing Community focused around honing skills relevant to the
-        blockchain world and connecting the right people to boost this
-        technology to the next level! Here are a couple more details:
-      </p>
-      <ul>
-        <li>
-          <span>
-            We are creating a limited series of 500 AI-Generated NFTs with a
-            Synthwave/Cyberpunk feel.
-          </span>
-        </li>
-        <li>
-          <span>
-            Our community is our biggest focus. We encourage you to develop
-            yourself and want to hear your feedback to improve our project as
-            well!
-          </span>
-        </li>
-        <li>
-          <span>
-            We are an open-development project, meaning you get to see how we
-            work on CyberGen every step of the way!
-          </span>
-        </li>
-        <li>
-          <span>
-            We will be hosting regular giveaways and customised NFTs to win for
-            your engagement
-          </span>
-        </li>
-      </ul>
-      <div>
-        <button (click)="openDiscord()" class="cybr-btn">
-          Discord<span aria-hidden></span>
-          <span aria-hidden class="cybr-btn__glitch">Discord</span>
-          <span aria-hidden class="cybr-btn__tag">R25</span>
-        </button>
-        <button (click)="showErrorMessage()" class="cybr-btn cybr-btn-purple">
-          Mint<span aria-hidden>_</span>
-          <span aria-hidden class="cybr-btn__glitch">Mint</span>
-          <span aria-hidden class="cybr-btn__tag">R25</span>
-        </button>
-        <div *ngIf="showMintingNotPossible" class="warning-message">
-          Minting is not possible yet
-        </div>
-      </div>
-    </div>
+  <img
+    class="main-background"
+    src="../assets/images/other/main-background.jpg"
+  />
+  <div class="main-title-container">
+    <h1 class="main-title">Welcome to CyberGen City</h1>
   </div>
+</div>
+<div class="intro-inner-container"></div>
+<div class="section" id="about-us">
+  <cyber-aboutus-component></cyber-aboutus-component>
 </div>
 <div class="section" id="gallery">
-  <div class="container">
-    <div class="work-wrapper">
-      <h1>Our Art</h1>
-      <div class="grid">
-        <div class="single-card">
-          <div
-            class="nft"
-            style="background-image: url('../assets/images/nft/1.png')"
-          ></div>
-        </div>
-        <div class="single-card">
-          <div
-            class="nft"
-            style="background-image: url('../assets/images/nft/2.png')"
-          ></div>
-        </div>
-        <div class="single-card">
-          <div
-            class="nft"
-            style="background-image: url('../assets/images/nft/3.png')"
-          ></div>
-        </div>
-        <div class="single-card">
-          <div
-            class="nft"
-            style="background-image: url('../assets/images/nft/4.png')"
-          ></div>
-        </div>
-        <div class="single-card">
-          <div
-            class="nft"
-            style="background-image: url('../assets/images/nft/5.png')"
-          ></div>
-        </div>
-        <div class="single-card">
-          <div
-            class="nft"
-            style="background-image: url('../assets/images/nft/6.png')"
-          ></div>
-        </div>
-        <div class="single-card">
-          <div
-            class="nft"
-            style="background-image: url('../assets/images/nft/7.png')"
-          ></div>
-        </div>
-        <div class="single-card">
-          <div
-            class="nft"
-            style="background-image: url('../assets/images/nft/8.png')"
-          ></div>
-        </div>
-        <div class="single-card">
-          <div
-            class="nft"
-            style="background-image: url('../assets/images/nft/9.png')"
-          ></div>
-        </div>
-        <div class="single-card">
-          <div
-            class="nft"
-            style="background-image: url('../assets/images/nft/10.png')"
-          ></div>
-        </div>
-        <div class="single-card">
-          <div
-            class="nft"
-            style="background-image: url('../assets/images/nft/11.png')"
-          ></div>
-        </div>
-        <div class="single-card">
-          <div
-            class="nft"
-            style="background-image: url('../assets/images/nft/12.png')"
-          ></div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <cyber-gallery-component></cyber-gallery-component>
 </div>
-<div class="section" id="about-us">
-  <div class="container">
-    <div class="header-wrapper">
-      <div class="heading-wrapper">
-        <h1>How is it generated ?</h1>
-      </div>
-      <p width="100%">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a tortor
-        mattis, elementum dui sit amet, eleifend nunc. Nullam porta enim turpis,
-        vel malesuada nibh scelerisque nec. Duis tincidunt eu felis non
-        sagittis. In fermentum, turpis ut vehicula tincidunt, quam neque
-        fringilla lorem, posuere interdum enim metus at dui. Suspendisse.
-      </p>
-      <ul>
-        <li>
-          <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-            congue arcu ut enim vulputate congue.
-          </span>
-        </li>
-        <li>
-          <span>
-            Mauris libero massa, varius eu magna sit amet, hendrerit commodo
-            felis. Nam feugiat augue non blandit euismod. Fusce pulvinar
-            consequat commodo. Nunc et.
-          </span>
-        </li>
-        <li>
-          <span>
-            Pellentesque maximus, risus nec pharetra efficitur, sem neque
-            interdum neque, a pellentesque tortor felis non nunc. Duis ut nibh
-            nec dui tristique luctus. Duis pellentesque euismod tincidunt. Nulla
-            egestas eleifend libero vel semper. Vestibulum sagittis id enim non
-            euismod. In quis ipsum sed massa bibendum condimentum vel.
-          </span>
-        </li>
-        <li>
-          <span>
-            id consequat ipsum, ac consectetur leo. In vulputate felis purus,
-            vitae blandit sem dictum sed. Nullam ut mi rutrum, commodo leo et,
-            semper arcu.
-          </span>
-        </li>
-      </ul>
-      <div>
-        <button (click)="openDiscord()" class="cybr-btn">
-          Discord<span aria-hidden></span>
-          <span aria-hidden class="cybr-btn__glitch">Discord</span>
-          <span aria-hidden class="cybr-btn__tag">R25</span>
-        </button>
-        <button (click)="showErrorMessage()" class="cybr-btn cybr-btn-purple">
-          Mint<span aria-hidden>_</span>
-          <span aria-hidden class="cybr-btn__glitch">Mint</span>
-          <span aria-hidden class="cybr-btn__tag">R25</span>
-        </button>
-        <div *ngIf="showMintingNotPossible" class="warning-message">
-          Minting is not possible yet
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="section" id="aiexpl">
+  <cyber-ai-component></cyber-ai-component>
+</div>
+<div class="section" id="team">
+  <cyber-team-component></cyber-team-component>
 </div>
 <main id="content-container">
   <footer id="foot">

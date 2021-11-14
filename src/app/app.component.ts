@@ -1,19 +1,15 @@
-import { AfterViewInit, Component, Renderer2 } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class HomeComponent implements AfterViewInit {
+export class HomeComponent {
   public showMintingNotPossible = false;
   public discordURL = 'https://discord.gg/3D6RN4k3FB';
-  constructor(private renderer: Renderer2) {}
+  constructor() {}
 
-  ngAfterViewInit() {
-    let loader = this.renderer.selectRootElement('#loader');
-    this.renderer.setStyle(loader, 'display', 'none');
-  }
   public showErrorMessage(): void {
     this.showMintingNotPossible = true;
   }
