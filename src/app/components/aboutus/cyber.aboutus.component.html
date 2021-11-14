@@ -16,7 +16,7 @@
       <li>
         <span>
           We are creating a limited series of 500 AI-Generated NFTs with a
-          Synthwave/Cyberpunk feel.
+          Synthwave / Cyberpunk feel.
         </span>
       </li>
       <li>
@@ -39,5 +39,21 @@
         </span>
       </li>
     </ul>
+  </div>
+
+  <div class="social-buttons">
+    <button (click)="openDiscord()" class="cybr-btn">
+      Discord<span aria-hidden></span>
+      <span aria-hidden class="cybr-btn__glitch">Discord</span>
+      <span aria-hidden class="cybr-btn__tag">R25</span>
+    </button>
+    <button (click)="showErrorMessage()" class="cybr-btn cybr-btn-purple">
+      Mint<span aria-hidden>_</span>
+      <span aria-hidden class="cybr-btn__glitch">Mint</span>
+      <span aria-hidden class="cybr-btn__tag">R25</span>
+    </button>
+    <div *ngIf="showMintingNotPossible" class="warning-message">
+      Minting is not possible yet
+    </div>
   </div>
 </div>

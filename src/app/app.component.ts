@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, Renderer2 } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,7 @@ import { AfterViewInit, Component, Renderer2 } from '@angular/core';
 export class HomeComponent {
   public showMintingNotPossible = false;
   public discordURL = 'https://discord.gg/3D6RN4k3FB';
-  constructor(private renderer: Renderer2) {}
+  constructor() {}
 
   public showErrorMessage(): void {
     this.showMintingNotPossible = true;

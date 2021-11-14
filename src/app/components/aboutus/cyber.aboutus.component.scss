@@ -1,3 +1,5 @@
+@use "../../../assets/global-styles/button-styles.scss";
+
 .content {
   height: 100%;
   display: flex;
@@ -17,35 +19,41 @@
   align-items: center;
   color: #fff;
   gap: 90px;
-}
-
-.header-wrapper h2 {
-  font-size: 1.5rem;
-  text-align: center;
-  margin-top: -40px;
-}
-
-.header-wrapper p {
-  color: #fff;
-  font-size: 1.9rem;
-  width: 82%;
-  text-align: center;
-  overflow: hidden;
-}
-
-.header-wrapper .heading-wrapper h1 {
-  color: #fff;
-  font-size: 7rem;
-  text-align: center;
-  line-height: 20px;
-  margin-top: 100px;
-}
-.header-wrapper ul {
-  width: 65%;
-  font-size: 1.9rem;
-  margin: -40px 20px 0px 20px;
-  li {
-    margin: 30px 0px;
-    line-height: 30px;
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: -40px;
   }
+  p {
+    color: #fff;
+    font-size: 1.9rem;
+    width: 82%;
+    text-align: center;
+    overflow: hidden;
+  }
+  .heading-wrapper h1 {
+    color: #fff;
+    font-size: 7rem;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 100px;
+  }
+  ul {
+    width: 65%;
+    font-size: 1.9rem;
+    margin: -40px 20px 0px 20px;
+    li {
+      margin: 30px 0px;
+      line-height: 30px;
+    }
+  }
+}
+
+.social-buttons {
+  margin-top: 20px;
+}
+.warning-message {
+  color: red;
+  font-size: 20px;
+  text-align: center;
 }

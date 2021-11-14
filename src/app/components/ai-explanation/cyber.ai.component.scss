@@ -1,3 +1,5 @@
+@use "../../../assets/global-styles/color-palette.scss" as c;
+
 .content {
   height: 100%;
   display: flex;
@@ -17,34 +19,42 @@
   align-items: center;
   color: #fff;
   gap: 90px;
-}
-
-.header-wrapper h2 {
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.header-wrapper p {
-  color: #fff;
-  font-size: 1.9rem;
-  width: 82%;
-  text-align: center;
-  overflow: hidden;
-}
-
-.header-wrapper .heading-wrapper h1 {
-  color: #fff;
-  font-size: 7rem;
-  text-align: center;
-  line-height: 20px;
-  margin-top: 100px;
-}
-.header-wrapper ul {
-  width: 65%;
-  margin-bottom: 50px;
-  font-size: 1.9rem;
-  li {
-    margin: 30px 0px;
-    line-height: 30px;
+  p {
+    color: #fff;
+    font-size: 1.9rem;
+    width: 82%;
+    text-align: center;
+    overflow: hidden;
   }
+  .heading-wrapper h1 {
+    color: #fff;
+    font-size: 7rem;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 100px;
+  }
+  ul {
+    list-style: none;
+    width: 65%;
+    margin-bottom: 50px;
+    font-size: 1.9rem;
+    li {
+      margin: 20px 0px;
+    }
+    li::before {
+      content: "\2022";
+      color: c.$persian-rose;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+  }
+}
+.list-title {
+  margin-bottom: -90px;
+  text-decoration: underline;
+  -webkit-text-decoration-color: c.$dark-turquoise;
+  text-decoration-color: c.$dark-turquoise;
+  text-underline-offset: 5px;
 }

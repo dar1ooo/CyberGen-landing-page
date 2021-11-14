@@ -4,42 +4,44 @@
       <h1>How is it generated ?</h1>
     </div>
     <p width="100%">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a tortor
-      mattis, elementum dui sit amet, eleifend nunc. Nullam porta enim turpis,
-      vel malesuada nibh scelerisque nec. Duis tincidunt eu felis non sagittis.
-      In fermentum, turpis ut vehicula tincidunt, quam neque fringilla lorem,
-      posuere interdum enim metus at dui. Suspendisse.
+      VQGAN+CLIP is a neural network architecture that builds upon the
+      revolutionary CLIP architecture published by OpenAI in January 2021. It is
+      a text-to-image model that generates images of variable size given a set
+      of text prompts (and some other parameters). There have been other
+      text-to-image models before (e.g. AttentionGAN), but the VQGAN+CLIP
+      architecture brings it on a whole new level:
     </p>
+    <h1 class="list-title">What is VQGAN ?</h1>
     <ul>
+      <li>VQGAN = Vector Quantized Generative Adversarial Network</li>
+      <li>a type of neural network architecture</li>
       <li>
-        <span>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue
-          arcu ut enim vulputate congue.
-        </span>
+        it combines convolutional neural networks (traditionally used for
+        images) with Transformers (traditionally used for language)
       </li>
       <li>
-        <span>
-          Mauris libero massa, varius eu magna sit amet, hendrerit commodo
-          felis. Nam feugiat augue non blandit euismod. Fusce pulvinar consequat
-          commodo. Nunc et.
-        </span>
-      </li>
-      <li>
-        <span>
-          Pellentesque maximus, risus nec pharetra efficitur, sem neque interdum
-          neque, a pellentesque tortor felis non nunc. Duis ut nibh nec dui
-          tristique luctus. Duis pellentesque euismod tincidunt. Nulla egestas
-          eleifend libero vel semper. Vestibulum sagittis id enim non euismod.
-          In quis ipsum sed massa bibendum condimentum vel.
-        </span>
-      </li>
-      <li>
-        <span>
-          id consequat ipsum, ac consectetur leo. In vulputate felis purus,
-          vitae blandit sem dictum sed. Nullam ut mi rutrum, commodo leo et,
-          semper arcu.
-        </span>
+        was first proposed in the paper “Taming Transformers” by University
+        Heidelberg (2020)
       </li>
     </ul>
+    <h1 class="list-title">What is CLIP ?</h1>
+    <ul>
+      <li>CLIP = Contrastive Language-Image Pretraining</li>
+      <li>
+        Model trained to determine which caption from a set of captions best
+        fits with a given image
+      </li>
+      <li>it also uses transformers</li>
+
+      <li>Great on unseen datasets</li>
+    </ul>
+    <div class="row">
+      <div class="col-8">
+        <img width="850px" src="../../../assets/images/other/ai-1.png" />
+      </div>
+      <div class="col-4">
+        <img height="550px" src="../../../assets/images/other/ai-2.png" />
+      </div>
+    </div>
   </div>
 </div>

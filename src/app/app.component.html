@@ -15,24 +15,41 @@
           >
             <li>Gallery</li>
           </a>
+          <a
+            onClick="document.getElementById('aiexpl').scrollIntoView({behavior: 'smooth'});"
+            class="nav-link"
+          >
+            <li>AI-explained</li>
+          </a>
+          <a
+            onClick="document.getElementById('team').scrollIntoView({behavior: 'smooth'});"
+            class="nav-link"
+          >
+            <li>Our Team</li>
+          </a>
         </ul>
       </nav>
     </section>
   </header>
+  <img
+    class="main-background"
+    src="../assets/images/other/remi-thorel-bcGl3g3WLoY-unsplash.jpg"
+  />
   <div class="main-title-container">
     <h1 class="main-title">Welcome to CyberGen City</h1>
   </div>
 </div>
+<div class="intro-inner-container"></div>
 <div class="section" id="about-us">
   <cyber-aboutus-component></cyber-aboutus-component>
 </div>
 <div class="section" id="gallery">
   <cyber-gallery-component></cyber-gallery-component>
 </div>
-<div class="section" id="about-us">
+<div class="section" id="aiexpl">
   <cyber-ai-component></cyber-ai-component>
 </div>
-<div class="section" id="about-us">
+<div class="section" id="team">
   <cyber-team-component></cyber-team-component>
 </div>
 <main id="content-container">

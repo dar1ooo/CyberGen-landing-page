@@ -1,6 +1,6 @@
 <div class="content">
   <div class="art-wrapper">
-    <h1>Our Art</h1>
+    <h1 class="art-title">Our Art</h1>
     <div class="grid">
       <div>
         <div
@@ -74,21 +74,6 @@
           style="background-image: url('../assets/images/nft/12.png')"
         ></div>
       </div>
-    </div>
-  </div>
-  <div>
-    <button (click)="openDiscord()" class="cybr-btn">
-      Discord<span aria-hidden></span>
-      <span aria-hidden class="cybr-btn__glitch">Discord</span>
-      <span aria-hidden class="cybr-btn__tag">R25</span>
-    </button>
-    <button (click)="showErrorMessage()" class="cybr-btn cybr-btn-purple">
-      Mint<span aria-hidden>_</span>
-      <span aria-hidden class="cybr-btn__glitch">Mint</span>
-      <span aria-hidden class="cybr-btn__tag">R25</span>
-    </button>
-    <div *ngIf="showMintingNotPossible" class="warning-message">
-      Minting is not possible yet
     </div>
   </div>
 </div>
