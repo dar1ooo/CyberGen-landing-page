@@ -15,14 +15,14 @@ body .cybr-btn + .cybr-btn {
     calc(var(--primary-lightness, 50) * 1%)
   );
   --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
-  --primary-hue: 0;
+  --primary-hue: 265;
   --primary-lightness: 50;
   --color: hsl(0, 0%, 100%);
   --font-size: 20px;
-  --shadow-primary-hue: 180;
+  --shadow-primary-hue: 60;
   --label-size: 9px;
   --shadow-secondary-hue: 60;
-  --shadow-secondary: hsl(var(--shadow-secondary-hue), 90%, 60%);
+  --shadow-secondary: hsl(var(--shadow-secondary-hue), 94%, 56%);
   --clip: polygon(
     0 0,
     100% 0,
@@ -274,5 +274,5 @@ body .cybr-btn + .cybr-btn {
 }
 
 .cybr-btn:nth-of-type(2) {
-  --primary-hue: 260;
+  --primary-hue: 324;
 }
