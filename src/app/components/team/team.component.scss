@@ -145,9 +145,9 @@ img {
   -ms-transition: all 600ms ease;
   -o-transition: all 600ms ease;
   transition: all 600ms ease;
-  background-image: -ms-linear-gradient(top, #ffca08 0%, #f70067 100%);
-  background-image: -moz-linear-gradient(top, #ffca08 0%, #f70067 100%);
-  background-image: -o-linear-gradient(top, #ffca08 0%, #f70067 100%);
+  background-image: -ms-linear-gradient(to bottom, #FC32AA 0%, #23DCEB 100%);
+  background-image: -moz-linear-gradient(to bottom, #FC32AA 0%, #23DCEB 100%);
+  background-image: -o-linear-gradient(to bottom, #FC32AA 0%, #23DCEB 100%);
   background-image: -webkit-gradient(
     linear,
     left top,
@@ -155,8 +155,8 @@ img {
     color-stop(0, #ffca08),
     color-stop(100, #f70067)
   );
-  background-image: -webkit-linear-gradient(top, #ffca08 0%, #f70067 100%);
-  background-image: linear-gradient(to bottom, #ffca08 0%, #f70067 100%);
+  background-image: -webkit-linear-gradient(to bottom, #FC32AA 0%, #23DCEB 100%);
+  background-image: linear-gradient(to bottom, #FC32AA 0%, #23DCEB 100%);
 }
 
 .team-block .inner-box:hover::after {
@@ -203,6 +203,7 @@ img {
   position: relative;
   width: 100%;
   display: block;
+  border-radius: 10px;
 }
 
 .team-block .inner-box .lower-content {

@@ -8,6 +8,12 @@ body .cybr-btn + .cybr-btn {
   margin-top: 2rem;
 }
 
+.warning-message {
+  color: red;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
 .cybr-btn {
   --primary: hsl(
     var(--primary-hue),
