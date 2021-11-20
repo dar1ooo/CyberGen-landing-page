@@ -1,10 +1,5 @@
 @use "../../../assets/global-styles/color-palette.scss" as c;
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .team-page-section {
   position: relative;
   padding-top: 70px;
@@ -204,13 +199,14 @@ img {
   width: 100%;
   display: block;
   border-radius: 10px;
+  margin: 0px 0 20px 0px;
 }
 
 .team-block .inner-box .lower-content {
   position: relative;
   text-align: left;
   z-index: 1;
-  padding: 30px 15px 0px 110px;
+  padding: 0px 15px 0px 110px;
 }
 
 .team-block .inner-box .lower-content h3 {

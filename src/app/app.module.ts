@@ -9,6 +9,7 @@ import { AiExplanationComponent } from './components/ai-explanation/cyber.ai.com
 import { AboutUsComponent } from './components/aboutus/cyber.aboutus.component';
 import { TeamComponent } from './components/team/team.component';
 import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { HeaderComponent } from './components/header/header.component';
     AboutUsComponent,
     TeamComponent,
     HeaderComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],

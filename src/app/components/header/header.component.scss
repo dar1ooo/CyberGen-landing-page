@@ -32,14 +32,14 @@
   }
 }
 .mint-button {
-  padding: 5px 30px;
+  padding: 0px 15px;
   font-size: 4rem;
   font-family: "Neon-Sans";
   color: #fff;
   text-shadow: #fff 0px 0px 15px, #23dceb 0px 0px 20px, #23dceb 0px 0px 30px,
     #23dceb 0px 0px 40px, 0px 2px 2px rgba(206, 89, 55, 0);
-  box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 2rem c.$dark-turquoise,
-    inset 0 0 2rem c.$dark-turquoise, 0 0 4rem c.$dark-turquoise;
+  box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 2rem #23dcebff,
+    inset 0 0 2rem #23dcebff, 0 0 4rem #23dcebff;
   font-weight: normal;
   border: 0.2rem solid #dfdfdf;
   &:hover {
@@ -49,7 +49,7 @@
 }
 
 .discord-button {
-  padding: 5px 30px;
+  padding: 0px 15px;
   font-size: 4rem;
   font-family: "Neon-Sans";
   color: #fff;

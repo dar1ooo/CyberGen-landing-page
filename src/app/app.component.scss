@@ -38,7 +38,7 @@ a {
 
   &:focus,
   &:hover {
-    color: rgba(44, 44, 44, 0.8);
+    color: white;
     text-decoration: none;
   }
 }
@@ -79,6 +79,9 @@ h6,
   text-shadow: #fff 0px 0px 15px, #23dceb 0px 0px 20px, #23dceb 0px 0px 30px,
     #23dceb 0px 0px 40px, 0px 2px 2px rgba(206, 89, 55, 0);
   font-weight: normal;
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
 }
 .intro-inner-container {
   display: flex;
@@ -107,8 +110,6 @@ h6,
 /*-----------------------------------------------------------
   2. About Us 
 --------------------------sr-only----------------------------------*/
-
-
 
 /*-----------------------------------------------------------
   2. Typography 
@@ -395,14 +396,6 @@ p {
 }
 
 /*-----------------------------------------------------------
-  6. About
--------------------------------------------------------------*/
-
-.about {
-  margin-bottom: 150px;
-}
-
-/*-----------------------------------------------------------
   10. Footer
 -------------------------------------------------------------*/
 
@@ -608,4 +601,45 @@ p {
     cursor: pointer;
     text-shadow: none;
   }
+}
+
+.footer-basic {
+  padding: 40px 0;
+}
+
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer-basic li {
+  padding: 0 10px;
+}
+
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer-basic .social img {
+  width: 2%;
+  height: auto;
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.footer-text {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 0;
 }
