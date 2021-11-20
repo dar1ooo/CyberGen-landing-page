@@ -8,6 +8,7 @@ import { GalleryComponent } from './components/gallery/cyber.gallery.component';
 import { AiExplanationComponent } from './components/ai-explanation/cyber.ai.component';
 import { AboutUsComponent } from './components/aboutus/cyber.aboutus.component';
 import { TeamComponent } from './components/team/team.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { TeamComponent } from './components/team/team.component';
     AiExplanationComponent,
     AboutUsComponent,
     TeamComponent,
+    HeaderComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],

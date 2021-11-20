@@ -1,4 +1,6 @@
 @use "../assets/global-styles/button-styles.scss";
+@use "../assets/global-styles/alert-styles.scss";
+@use "../assets/global-styles/responsive-style.scss";
 @use "../assets/global-styles/color-palette.scss" as c;
 @import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap);
@@ -70,6 +72,43 @@ h6,
 :focus {
   outline: none !important;
 }
+
+.section-header {
+  font-family: "Neon-Sans";
+  color: #fff;
+  text-shadow: #fff 0px 0px 15px, #23dceb 0px 0px 20px, #23dceb 0px 0px 30px,
+    #23dceb 0px 0px 40px, 0px 2px 2px rgba(206, 89, 55, 0);
+  font-weight: normal;
+}
+.intro-inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 150px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(
+      -180deg,
+      rgba(0, 0, 0, 0) 30%,
+      rgba(0, 0, 0, 0.8) 60%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  }
+}
+/*-----------------------------------------------------------
+  2. About Us 
+--------------------------sr-only----------------------------------*/
+
+
 
 /*-----------------------------------------------------------
   2. Typography 
@@ -311,137 +350,6 @@ p {
   4. Header
 -------------------------------------------------------------*/
 
-#home {
-  height: 100vh;
-  background: url(https://media.discordapp.net/attachments/903939739965607957/910465929278816306/LP_BG_V4.jpg?width=1290&height=730)
-    no-repeat 37% 50%;
-  background-size: cover;
-}
-
-.intro-inner-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  background: rgba(0, 0, 0, 0.4);
-  width: 100%;
-  height: 100%;
-  position: relative;
-
-  &::after {
-    content: "";
-    width: 100%;
-    height: 150px;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    background: linear-gradient(
-      -180deg,
-      rgba(0, 0, 0, 0) 30%,
-      rgba(0, 0, 0, 0.8) 60%,
-      rgba(0, 0, 0, 1) 100%
-    );
-  }
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: #fff;
-  font-size: 1.1rem;
-}
-
-.hero-btns {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 0 29px;
-  a,
-  a:hover,
-  a:visited,
-  a:active {
-    color: inherit;
-    text-decoration: none;
-    height: fit-content;
-  }
-}
-.mint-button {
-  padding: 5px 30px;
-  font-size: 4rem;
-  font-family: "Neon-Sans";
-  color: #fff;
-  text-shadow: #fff 0px 0px 15px, #23dceb 0px 0px 20px, #23dceb 0px 0px 30px,
-    #23dceb 0px 0px 40px, 0px 2px 2px rgba(206, 89, 55, 0);
-  box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 2rem c.$dark-turquoise,
-    inset 0 0 2rem c.$dark-turquoise, 0 0 4rem c.$dark-turquoise;
-  font-weight: normal;
-  border: 0.2rem solid #dfdfdf;
-  &:hover {
-    animation: flickerturqoise 2s infinite;
-    cursor: hover;
-  }
-}
-
-.discord-button {
-  padding: 5px 30px;
-  font-size: 4rem;
-  font-family: "Neon-Sans";
-  color: #fff;
-  text-shadow: #fff 0px 0px 15px, #ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px,
-    #ff2d95 0px 0px 40px, #ff2d95 0px 0px 50px, 0px 2px 2px rgba(206, 89, 55, 0);
-  box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff, 0 0 2rem c.$persian-rose,
-    inset 0 0 2rem c.$persian-rose, 0 0 4rem c.$persian-rose,
-    inset 0 0 4rem c.$persian-rose;
-  font-weight: normal;
-  border: 0.2rem solid #dfdfdf;
-  &:hover {
-    cursor: pointer;
-    animation: flickermagentapointer 2s infinite;
-  }
-}
-
-.navbar-light .navbar-nav {
-  .active > .nav-link {
-    color: #ff3946;
-  }
-
-  .nav-link {
-    &.active,
-    &.show {
-      color: #ff3946;
-    }
-  }
-
-  .show > .nav-link {
-    color: #ff3946;
-  }
-}
-
-.navbar {
-  padding: 50px 0 0 0;
-}
-
-.navbar-light .navbar-brand {
-  margin-right: 10%;
-}
-
-.nav-item {
-  padding: 0 10px;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  &:focus,
-  &:hover {
-    color: #ff3946;
-  }
-}
-
-.hero {
-  h1 {
-    margin-top: 150px;
-    font-size: 8rem;
-    text-transform: uppercase;
-    text-align: center;
-    animation: flickermagenta 2s infinite alternate;
-  }
-}
-
 /*-----------------------------------------------------------
   5. Services
 -------------------------------------------------------------*/
@@ -492,258 +400,6 @@ p {
 
 .about {
   margin-bottom: 150px;
-}
-
-/*-----------------------------------------------------------
- 7. Portfolio
--------------------------------------------------------------*/
-
-.portfolio-aside img {
-  margin-top: 20px;
-  position: absolute;
-  left: -20px;
-}
-
-.work-box {
-  margin-bottom: 30px;
-
-  img {
-    width: 370px;
-    height: auto;
-  }
-}
-
-/* Portfolio Gallery Hover */
-
-.photobox {
-  display: inline-block;
-}
-
-.photobox__previewbox {
-  position: relative;
-  overflow: hidden;
-}
-
-.photobox__preview {
-  display: block;
-  max-width: 100%;
-}
-
-.photobox__previewbox:before {
-  content: "";
-}
-
-.photobox_type10 {
-  .photobox__previewbox:before {
-    width: 0;
-    height: 0;
-    padding: 25%;
-    background-color: #fff;
-    opacity: 0.8;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transition: transform calc(var(--photoboxAnimationDuration, 0.8s) / 2) ease;
-    will-change: transform;
-    transform: translate(-50%, -50%) scale(0);
-  }
-
-  &:hover .photobox__previewbox:before {
-    transform: translate(-50%, -50%) scale(4);
-    transition-duration: var(--photoboxAnimationDuration, 0.8s);
-  }
-
-  .photobox__label {
-    width: 95%;
-    text-align: center;
-    opacity: 0;
-    transition: opacity calc(var(--photoboxAnimationDuration, 0.8s) / 4)
-        cubic-bezier(0.71, 0.05, 0.29, 0.9),
-      transform calc(var(--photoboxAnimationDuration, 0.8s) / 4)
-        cubic-bezier(0.71, 0.05, 0.29, 0.9);
-    will-change: opacity, transform;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 200%);
-    z-index: 3;
-    color: #fff;
-    font-family: "Work Sans", sans-serif;
-    font-weight: 600;
-    font-size: 1.1rem;
-  }
-
-  &:hover .photobox__label {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-    transition-duration: calc(var(--photoboxAnimationDuration, 0.8s) / 2);
-    transition-delay: calc(var(--photoboxAnimationDuration, 0.8s) / 4);
-  }
-}
-
-.hide {
-  display: none;
-  transition: all 0.3s ease;
-}
-
-/*-----------------------------------------------------------
-  8. Blog
--------------------------------------------------------------*/
-
-.blog-aside img {
-  position: absolute;
-  right: -20px;
-  margin-top: 200px;
-}
-
-.blog {
-  padding: 25px 0px;
-  margin-bottom: 100px;
-}
-
-.blog-box {
-  background-color: #fff;
-  min-height: 330px;
-  max-width: 370px;
-  padding: 50px 25px;
-  -webkit-box-shadow: 0px 3px 7px 0px rgba(28, 31, 33, 0.15);
-  -moz-box-shadow: 0px 3px 7px 0px rgba(28, 31, 33, 0.15);
-  box-shadow: 0px 3px 7px 0px rgba(28, 31, 33, 0.15);
-  margin: 10px;
-
-  p {
-    &:nth-child(2) {
-      font-size: 0.9rem;
-      color: #6e757a !important;
-    }
-
-    &:nth-child(3) {
-      font-size: 1.2rem;
-      color: #fff;
-    }
-  }
-}
-
-.slick-prev {
-  position: absolute;
-  right: 60px;
-  top: -50px;
-}
-
-.slick-next {
-  position: absolute;
-  right: 10px;
-  top: -50px;
-}
-
-.blog-slider button {
-  font-size: 3rem;
-  border: none;
-  background-color: #fff;
-  color: #bbbbbc;
-
-  &:hover {
-    color: #fff;
-    transition: all 0.3s ease;
-  }
-}
-
-.blog-first {
-  background-color: #ff3946;
-
-  h6 {
-    color: #fff;
-  }
-
-  p {
-    &:nth-child(2) {
-      color: #fff !important;
-    }
-
-    &:nth-child(3) {
-      color: #fff;
-    }
-  }
-}
-
-.blog-slider {
-  cursor: pointer;
-}
-
-.hide-blog {
-  display: none;
-}
-
-#blog-btn {
-  color: #ff3946;
-  font-size: 1.2rem;
-  font-family: "Work Sans", sans-serif;
-  font-weight: 600;
-  background-color: #fff;
-  border: none;
-  margin-top: 20px;
-
-  &:hover {
-    color: #fff;
-  }
-}
-
-.hide-me {
-  display: none;
-}
-
-/*-----------------------------------------------------------
-  9. Contact
--------------------------------------------------------------*/
-
-.contact {
-  max-height: 550px;
-}
-
-.email input {
-  width: 100%;
-  height: 60px;
-  background-color: #f4fafe;
-  border: none;
-  padding: 0px 20px;
-  color: #fff;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  color: #fff;
-  font-weight: 600;
-}
-
-::-moz-placeholder {
-  /* Firefox 19+ */
-  color: #fff;
-  font-weight: 600;
-}
-
-:-ms-input-placeholder {
-  /* IE 10+ */
-  color: #fff;
-  font-weight: 600;
-}
-
-:-moz-placeholder {
-  /* Firefox 18- */
-  color: #fff;
-  font-weight: 600;
-}
-
-textarea {
-  background-color: #f4fafe;
-  border: none;
-  width: 100%;
-  padding: 20px;
-  margin-top: 15px;
-  color: #fff;
-  font-weight: 600;
 }
 
 /*-----------------------------------------------------------
@@ -883,199 +539,6 @@ textarea {
   position: absolute;
   right: 0;
   top: -300px;
-}
-
-/*-----------------------------------------------------------
-  11. Responsive
--------------------------------------------------------------*/
-@media (max-width: 1700px) {
-  .hero-btns {
-    margin-bottom: 200px;
-  }
-}
-
-@media (max-width: 1500px) {
-  .hero img {
-    margin-top: 130px;
-  }
-}
-
-@media (max-width: 1350px) {
-  .hero-btns {
-    margin-bottom: 140px;
-  }
-}
-
-@media (max-width: 1199px) {
-  .nav-item {
-    padding: 0px;
-  }
-
-  .navbar-light .navbar-nav .nav-link {
-    font-size: 1rem;
-  }
-
-  .contact-btn button {
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    background-color: none;
-    font-size: 1rem;
-  }
-
-  .hero {
-    img {
-      margin-top: 150px;
-      width: 45%;
-    }
-
-    h1 {
-      margin-top: 150px;
-    }
-  }
-
-  h2 {
-    font-size: 2rem;
-    line-height: 3rem;
-  }
-
-  h3 {
-    font-size: 1.4rem;
-    line-height: 2rem;
-    margin-bottom: 20px;
-  }
-
-  .services p {
-    font-size: 0.8rem;
-  }
-
-  .hero-btns {
-    margin-bottom: 120px;
-  }
-}
-
-@media (max-width: 991px) {
-  .navbar {
-    padding: 15px 0 0 0;
-  }
-
-  .hero {
-    img {
-      margin-top: 0;
-      width: 100%;
-      height: auto;
-    }
-
-    text-align: center;
-
-    h1 {
-      margin-top: 80px;
-    }
-  }
-
-  .navbar-collapse {
-    text-align: center;
-    margin-top: 50px;
-  }
-
-  .navbar-light .navbar-nav .nav-link {
-    font-size: 2rem;
-  }
-
-  .contact-btn {
-    display: none;
-  }
-
-  .hero-btns {
-    margin-bottom: 70px;
-  }
-
-  .service-txt {
-    text-align: center;
-  }
-
-  .about {
-    img {
-      margin-bottom: 70px;
-    }
-
-    text-align: center;
-  }
-
-  .portfolio,
-  .blog {
-    text-align: center;
-  }
-
-  .blog-box {
-    margin: 0 auto;
-    margin-bottom: 25px;
-  }
-
-  .contact {
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 3.5rem;
-  }
-
-  .service-box {
-    padding: 20px 25px;
-    margin: 0px;
-  }
-
-  .contact-nav a {
-    font-size: 1rem;
-    padding: 20px 5px;
-  }
-}
-
-@media (max-width: 575px) {
-  .service-box {
-    padding: 20px 25px;
-    max-width: 300px;
-    margin: 0 auto;
-    margin-bottom: 40px;
-  }
-
-  footer h3 {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 454px) {
-  .hero {
-    h1 {
-      font-size: 3rem;
-      margin-top: 50px;
-    }
-
-    p {
-      font-size: 0.8rem;
-    }
-  }
-
-  .hero-btns a {
-    &:first-child,
-    &:last-child {
-      font-size: 0.8rem;
-      display: block;
-      width: 70%;
-      margin: 0 auto;
-    }
-  }
-
-  footer h3 {
-    line-height: 2.6rem;
-  }
-
-  .contact-nav li,
-  .social li {
-    display: block;
-  }
 }
 
 /* Animate neon flicker */
