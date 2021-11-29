@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './app.component';
@@ -10,6 +9,7 @@ import { AboutUsComponent } from './components/aboutus/cyber.aboutus.component';
 import { TeamComponent } from './components/team/team.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
