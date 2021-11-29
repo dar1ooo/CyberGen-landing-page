@@ -7,12 +7,4 @@ import { Component, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None,
 })
 export class GalleryComponent {
-  public showMoreImages = false;
-  public showMoreImagesClicked(): void {
-    if (this.showMoreImages) {
-      this.showMoreImages = false;
-    } else {
-      this.showMoreImages = true;
-    }
-  }
 }
