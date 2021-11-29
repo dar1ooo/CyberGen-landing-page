@@ -140,9 +140,9 @@
   -ms-transition: all 600ms ease;
   -o-transition: all 600ms ease;
   transition: all 600ms ease;
-  background-image: -ms-linear-gradient(to bottom, #FC32AA 0%, #23DCEB 100%);
-  background-image: -moz-linear-gradient(to bottom, #FC32AA 0%, #23DCEB 100%);
-  background-image: -o-linear-gradient(to bottom, #FC32AA 0%, #23DCEB 100%);
+  background-image: -ms-linear-gradient(to bottom, #fc32aa 0%, #23dceb 100%);
+  background-image: -moz-linear-gradient(to bottom, #fc32aa 0%, #23dceb 100%);
+  background-image: -o-linear-gradient(to bottom, #fc32aa 0%, #23dceb 100%);
   background-image: -webkit-gradient(
     linear,
     left top,
@@ -150,8 +150,12 @@
     color-stop(0, #ffca08),
     color-stop(100, #f70067)
   );
-  background-image: -webkit-linear-gradient(to bottom, #FC32AA 0%, #23DCEB 100%);
-  background-image: linear-gradient(to bottom, #FC32AA 0%, #23DCEB 100%);
+  background-image: -webkit-linear-gradient(
+    to bottom,
+    #fc32aa 0%,
+    #23dceb 100%
+  );
+  background-image: linear-gradient(to bottom, #fc32aa 0%, #23dceb 100%);
 }
 
 .team-block .inner-box:hover::after {
@@ -206,7 +210,7 @@
   position: relative;
   text-align: left;
   z-index: 1;
-  padding: 0px 15px 0px 110px;
+  padding: 0px 0px 0px 110px;
 }
 
 .team-block .inner-box .lower-content h3 {
