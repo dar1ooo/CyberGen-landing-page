@@ -12,8 +12,8 @@
 }
 
 .alert-simple.alert-warning {
-  border: 3px solid rgba(35, 220, 235, 0.13);
-  background-color: rgba(35, 220, 235, 0.13);
+  border: 3px solid rgba(35, 220, 235, 0.33);
+  background-color: rgba(35, 220, 235, 0.33);
   box-shadow: 0px 0px 6px #23dceb;
   color: #23dceb;
   text-shadow: 2px 1px #00040a;
@@ -23,7 +23,7 @@
 }
 
 .alert-warning:hover {
-  background-color: rgba(35, 220, 235, 0.13);
+  background-color: rgba(35, 220, 235, 0.43);
   transition: 0.5s;
 }
 
