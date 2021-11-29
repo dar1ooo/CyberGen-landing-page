@@ -6,41 +6,21 @@
           <h1 class="section-header">How it works</h1>
         </div>
       </div>
-      <h3 class="sub-title">How is it generated ?</h3>
-      <p width="100%">
-        VQGAN+CLIP is a neural network architecture that builds upon the
-        revolutionary CLIP architecture published by OpenAI in January 2021. It
-        is a text-to-image model that generates images of variable size given a
-        set of text prompts (and some other parameters). There have been other
-        text-to-image models before (e.g. AttentionGAN), but the VQGAN+CLIP
-        architecture brings it on a whole new level:
-      </p>
-      <h3 class="sub-title">What is VQGAN ?</h3>
-
-      <ul>
-        <li>VQGAN = Vector Quantized Generative Adversarial Network</li>
-        <li>a type of neural network architecture</li>
-        <li>
-          it combines convolutional neural networks (traditionally used for
-          images) with Transformers (traditionally used for language)
-        </li>
-        <li>
-          was first proposed in the paper “Taming Transformers” by University
-          Heidelberg (2020)
-        </li>
-      </ul>
-      <h3 class="sub-title">What is CLIP ?</h3>
-
-      <ul>
-        <li>CLIP = Contrastive Language-Image Pretraining</li>
-        <li>
-          Model trained to determine which caption from a set of captions best
-          fits with a given image
-        </li>
-        <li>it also uses transformers</li>
-
-        <li>Great on unseen datasets</li>
-      </ul>
+      <div class="row">
+        <p>
+          We use a combination of 2 AI-Models: CLIP from OpenAI and VGQAN from
+          the University of Heidelberg. The process is actually quite simple.
+          VQGAN tried to generate an image based on a text prompt from the user.
+          That picture is then analysed by CLIP, which tries to determine how
+          close the picture is to the given text prompt. It provides feedback to
+          VQGAN, which then tries to generate a new image based on it. After
+          hundreds of iterations, the final picture starts to emerge. If you
+          have any more questions, feel free to ask on the discord server.
+        </p>
+      </div>
+      <div class="row">
+        <img class="ai-image" src="../../../assets/images/other/AI-Explanation.png">
+      </div>
     </div>
   </div>
 </section>
