@@ -26,7 +26,8 @@ export class HeaderComponent {
     const element = document.getElementById(newActiveNavElement);
     if (element) {
       const yOffset = -100;
-      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      const y =
+        element.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
       window.scrollTo({ top: y, behavior: 'smooth' });
     }

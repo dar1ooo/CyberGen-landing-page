@@ -11,7 +11,7 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #fff;
+  color: c.$dark-turquoise;
   font-size: 1.1rem;
   &:hover {
     cursor: pointer;
@@ -68,18 +68,7 @@
 
 .navbar-light .navbar-nav {
   .active > .nav-link {
-    color: #ff3946;
-  }
-
-  .nav-link {
-    &.active,
-    &.show {
-      color: #ff3946;
-    }
-  }
-
-  .show > .nav-link {
-    color: #ff3946;
+    color: c.$persian-rose;
   }
 }
 
@@ -98,7 +87,7 @@
 .navbar-light .navbar-nav .nav-link {
   &:focus,
   &:hover {
-    color: #ff3946;
+    color: c.$persian-rose;
   }
 }
 

@@ -24,23 +24,21 @@
             class="nav-item"
             [ngClass]="activeNavBar === 'gallery' ? 'active' : ''"
           >
-            <a class="nav-link" (click)="navElementClicked('gallery')"
-              >Our Art</a
-            >
+            <a class="nav-link" (click)="navElementClicked('gallery')">Art</a>
           </li>
           <li
             class="nav-item"
             [ngClass]="activeNavBar === 'ai-eplanation' ? 'active' : ''"
           >
             <a class="nav-link" (click)="navElementClicked('ai-eplanation')"
-              >How it works</a
+              >Technology</a
             >
           </li>
           <li
             class="nav-item"
             [ngClass]="activeNavBar === 'team' ? 'active' : ''"
           >
-            <a class="nav-link" (click)="navElementClicked('team')">Our Team</a>
+            <a class="nav-link" (click)="navElementClicked('team')">Team</a>
           </li>
         </ul>
       </div>

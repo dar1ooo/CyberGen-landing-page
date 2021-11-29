@@ -6,5 +6,4 @@ import { Component, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./cyber.gallery.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
-export class GalleryComponent {
-}
+export class GalleryComponent {}

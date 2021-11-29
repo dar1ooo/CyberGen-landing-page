@@ -5,6 +5,5 @@ import { Component, ViewEncapsulation } from '@angular/core';
   templateUrl: './team.component.html',
   styleUrls: ['./team.component.scss'],
   encapsulation: ViewEncapsulation.None,
-
 })
 export class TeamComponent {}
