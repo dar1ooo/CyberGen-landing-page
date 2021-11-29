@@ -12,10 +12,10 @@
 }
 
 .alert-simple.alert-warning {
-  border: 3px solid rgba(241, 142, 6, 0.81);
-  background-color: rgba(220, 128, 1, 0.4);
-  box-shadow: 0px 0px 6px #ffb103;
-  color: #ffb103;
+  border: 3px solid rgba(35, 220, 235, 0.13);
+  background-color: rgba(35, 220, 235, 0.13);
+  box-shadow: 0px 0px 6px #23dceb;
+  color: #23dceb;
   text-shadow: 2px 1px #00040a;
   transition: 0.5s;
   cursor: pointer;
@@ -23,7 +23,7 @@
 }
 
 .alert-warning:hover {
-  background-color: rgba(220, 128, 1, 0.13);
+  background-color: rgba(35, 220, 235, 0.13);
   transition: 0.5s;
 }
 
