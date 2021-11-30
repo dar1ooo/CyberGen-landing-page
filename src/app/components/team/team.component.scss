@@ -1,14 +1,9 @@
 @use "../../../assets/global-styles/color-palette.scss" as c;
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .team-page-section {
   position: relative;
   padding-top: 70px;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Lucida Console", "Courier New", monospace;
   letter-spacing: 2px;
 }
 
@@ -124,7 +119,7 @@ img {
   left: 70px;
   bottom: 0px;
   border-radius: 10px;
-  background-color: c.$blue-sapphire;
+  background-color: c.$dark-purple;
   -webkit-transition: all 600ms ease;
   -moz-transition: all 600ms ease;
   -ms-transition: all 600ms ease;
@@ -145,9 +140,9 @@ img {
   -ms-transition: all 600ms ease;
   -o-transition: all 600ms ease;
   transition: all 600ms ease;
-  background-image: -ms-linear-gradient(top, #ffca08 0%, #f70067 100%);
-  background-image: -moz-linear-gradient(top, #ffca08 0%, #f70067 100%);
-  background-image: -o-linear-gradient(top, #ffca08 0%, #f70067 100%);
+  background-image: -ms-linear-gradient(to bottom, #fc32aa 0%, #23dceb 100%);
+  background-image: -moz-linear-gradient(to bottom, #fc32aa 0%, #23dceb 100%);
+  background-image: -o-linear-gradient(to bottom, #fc32aa 0%, #23dceb 100%);
   background-image: -webkit-gradient(
     linear,
     left top,
@@ -155,8 +150,12 @@ img {
     color-stop(0, #ffca08),
     color-stop(100, #f70067)
   );
-  background-image: -webkit-linear-gradient(top, #ffca08 0%, #f70067 100%);
-  background-image: linear-gradient(to bottom, #ffca08 0%, #f70067 100%);
+  background-image: -webkit-linear-gradient(
+    to bottom,
+    #fc32aa 0%,
+    #23dceb 100%
+  );
+  background-image: linear-gradient(to bottom, #fc32aa 0%, #23dceb 100%);
 }
 
 .team-block .inner-box:hover::after {
@@ -203,13 +202,15 @@ img {
   position: relative;
   width: 100%;
   display: block;
+  border-radius: 10px;
+  margin: 0px 0 20px 0px;
 }
 
 .team-block .inner-box .lower-content {
   position: relative;
   text-align: left;
   z-index: 1;
-  padding: 30px 15px 0px 110px;
+  padding: 0px 0px 0px 110px;
 }
 
 .team-block .inner-box .lower-content h3 {

@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'cyber-aboutus-component',
   templateUrl: './cyber.aboutus.component.html',
   styleUrls: ['./cyber.aboutus.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class AboutUsComponent {
   public showMintingNotPossible = false;

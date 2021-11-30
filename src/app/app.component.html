@@ -1,83 +1,13 @@
-<div class="main-content">
-  <header id="header">
-    <section id="header-fixed">
-      <nav id="nav-bar">
-        <ul id="nav-list">
-          <a
-            onClick="document.getElementById('about-us').scrollIntoView({behavior: 'smooth'});"
-            class="nav-link"
-          >
-            <li>About Us</li>
-          </a>
-          <a
-            onClick="document.getElementById('gallery').scrollIntoView({behavior: 'smooth'});"
-            class="nav-link"
-          >
-            <li>Gallery</li>
-          </a>
-          <a
-            onClick="document.getElementById('aiexpl').scrollIntoView({behavior: 'smooth'});"
-            class="nav-link"
-          >
-            <li>AI-explained</li>
-          </a>
-          <a
-            onClick="document.getElementById('team').scrollIntoView({behavior: 'smooth'});"
-            class="nav-link"
-          >
-            <li>Our Team</li>
-          </a>
-        </ul>
-      </nav>
-    </section>
-  </header>
-  <img
-    class="main-background"
-    src="../assets/images/other/main-background.jpg"
-  />
-  <div class="main-title-container">
-    <h1 class="main-title">Welcome to CyberGen City</h1>
-  </div>
-</div>
+<!-- HEADER SECTION -->
+<cyber-header-component></cyber-header-component>
+<!-- About Us -->
 <div class="intro-inner-container"></div>
-<div class="section" id="about-us">
-  <cyber-aboutus-component></cyber-aboutus-component>
-</div>
-<div class="section" id="gallery">
-  <cyber-gallery-component></cyber-gallery-component>
-</div>
-<div class="section" id="aiexpl">
-  <cyber-ai-component></cyber-ai-component>
-</div>
-<div class="section" id="team">
-  <cyber-team-component></cyber-team-component>
-</div>
-<main id="content-container">
-  <footer id="foot">
-    <div class="foot-inner-container">
-      <div class="foot-inner-social">
-        <h2>Find Us on</h2>
-        <div class="social-container">
-          <div class="social-icon">
-            <a href="https://discord.gg/3D6RN4k3FB" target="”_blank”"
-              ><img src="../assets/images/icons/discord.png" alt="discord icon"
-            /></a>
-          </div>
-          <div class="social-icon">
-            <a href="https://www.instagram.com/cybergennft/" target="”_blank”"
-              ><img
-                src="../assets/images/icons/instagram.png"
-                alt="instagram icon"
-            /></a>
-          </div>
-          <div class="social-icon">
-            <a href="https://twitter.com/CyberGenNFT" target="”_blank”"
-              ><img src="../assets/images/icons/twitter.png" alt="twitter icon"
-            /></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom-container"></div>
-  </footer>
-</main>
+<cyber-aboutus-component></cyber-aboutus-component>
+<!-- PORTFOLIO SECTION -->
+<cyber-gallery-component></cyber-gallery-component>
+<!-- BLOG SECTION -->
+<cyber-ai-component></cyber-ai-component>
+<!-- TEAM SECTION -->
+<cyber-team-component></cyber-team-component>
+<!-- FOOTER SECTION -->
+<cyber-footer-component></cyber-footer-component>

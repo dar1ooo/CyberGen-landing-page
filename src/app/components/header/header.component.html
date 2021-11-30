@@ -1,0 +1,89 @@
+<header id="home">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div
+        class="collapse fixed-top navbar-collapse"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav">
+          <li
+            class="nav-item"
+            [ngClass]="activeNavBar === 'home' ? 'active' : ''"
+          >
+            <a class="nav-link" (click)="navElementClicked('home')">Home</a>
+          </li>
+          <li
+            class="nav-item"
+            [ngClass]="activeNavBar === 'about-us' ? 'active' : ''"
+          >
+            <a class="nav-link" (click)="navElementClicked('about-us')"
+              >CyberGen</a
+            >
+          </li>
+          <li
+            class="nav-item"
+            [ngClass]="activeNavBar === 'gallery' ? 'active' : ''"
+          >
+            <a class="nav-link" (click)="navElementClicked('gallery')">Art</a>
+          </li>
+          <li
+            class="nav-item"
+            [ngClass]="activeNavBar === 'ai-eplanation' ? 'active' : ''"
+          >
+            <a class="nav-link" (click)="navElementClicked('ai-eplanation')"
+              >Technology</a
+            >
+          </li>
+          <li
+            class="nav-item"
+            [ngClass]="activeNavBar === 'team' ? 'active' : ''"
+          >
+            <a class="nav-link" (click)="navElementClicked('team')">Team</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="container-fluid hero">
+    <div class="container">
+      <h1>Welcome to</h1>
+      <div><img src="../../../assets/images/other/CG_Logo_V2.png" /></div>
+      <div class="hero-btns">
+        <a class="mint-button" (click)="showErrorMessage()">Mint</a>
+        <a class="discord-button" (click)="openDiscord()">Discord</a>
+      </div>
+      <div class="container mt-5" *ngIf="showMintMessage">
+        <div
+          class="
+            alert
+            fade
+            alert-simple alert-warning alert-dismissible
+            text-left
+            font__family-montserrat font__size-16 font__weight-light
+            brk-library-rendered
+            rendered
+            show
+          "
+          role="alert"
+          data-brk-library="component__alert"
+          (click)="hideMintMessage()"
+        >
+          <button
+            type="button"
+            class="close"
+            data-dismiss="alert"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+          <i
+            class="start-icon fa fa-exclamation-triangle faa-flash animated"
+          ></i>
+          Coming Soon...
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- End of Hero Section -->

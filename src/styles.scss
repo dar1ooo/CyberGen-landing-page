@@ -7,7 +7,7 @@
 }
 body {
   background-color: black;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 html {
   overflow: scroll;
@@ -20,4 +20,10 @@ html {
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
   background: transparent;
+}
+
+/* Typography */
+@font-face {
+  font-family: "Neon-Sans";
+  src: local("Neon Sans"), url(assets/fonts/NeonSans.ttf) format("truetype");
 }
