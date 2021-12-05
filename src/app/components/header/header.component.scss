@@ -4,7 +4,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap);
 
 #home {
-  height: 100vh;
+  padding-bottom: 15%;
   background: url(https://media.discordapp.net/attachments/903939739965607957/910465929278816306/LP_BG_V4.jpg?width=1290&height=730)
     no-repeat 37% 50%;
   background-size: cover;
@@ -32,8 +32,10 @@
   }
 }
 .mint-button {
-  padding: 0px 15px;
-  font-size: 4rem;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 4vw;
+  width: fit-content;
   font-family: "Neon-Sans";
   color: #fff;
   text-shadow: #fff 0px 0px 15px, #23dceb 0px 0px 20px, #23dceb 0px 0px 30px,
@@ -48,9 +50,16 @@
   }
 }
 
+.logo-main {
+  height: auto;
+  width: 30vw;
+}
+
 .discord-button {
-  padding: 0px 15px;
-  font-size: 4rem;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 4vw;
+  width: fit-content;
   font-family: "Neon-Sans";
   color: #fff;
   text-shadow: #fff 0px 0px 15px, #ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px,
@@ -95,7 +104,7 @@
   h1 {
     margin-top: 5%;
     margin-bottom: 0px;
-    font-size: 8rem;
+    font-size: 8vw;
     text-transform: uppercase;
     text-align: center;
     animation: flickermagenta 2s infinite alternate;
@@ -136,17 +145,6 @@
     font-size: 1rem;
   }
 
-  .hero {
-    img {
-      margin-top: 150px;
-      width: 45%;
-    }
-
-    h1 {
-      margin-top: 150px;
-    }
-  }
-
   h2 {
     font-size: 2rem;
     line-height: 3rem;
@@ -171,12 +169,19 @@
   .navbar {
     padding: 15px 0 0 0;
   }
-
+  .hero-btns a {
+    &:first-child,
+    &:last-child {
+      font-size: 2rem;
+      display: block;
+      width: 70%;
+      margin: 0 auto;
+      margin-top: 10%;
+    }
+  }
   .hero {
     img {
       margin-top: 0;
-      width: 100%;
-      height: auto;
     }
 
     text-align: center;
@@ -280,16 +285,6 @@
 
     p {
       font-size: 0.8rem;
-    }
-  }
-
-  .hero-btns a {
-    &:first-child,
-    &:last-child {
-      font-size: 2rem;
-      display: block;
-      width: 70%;
-      margin-top: 10%;
     }
   }
 

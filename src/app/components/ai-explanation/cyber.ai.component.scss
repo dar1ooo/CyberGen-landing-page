@@ -111,3 +111,18 @@
   margin-right: auto;
   width: 90%;
 }
+@media (max-width: 1199px) {
+  .footer-basic .social img {
+    width: 4%;
+  }
+}
+@media (max-width: 991px) {
+  .footer-basic .social img {
+    width: 5%;
+  }
+}
+@media (max-width: 575px) {
+  .footer-basic .social img {
+    width: 10%;
+  }
+}

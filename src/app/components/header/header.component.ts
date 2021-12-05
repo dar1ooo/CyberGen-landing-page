@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'cyber-header-component',
@@ -11,14 +12,14 @@ export class HeaderComponent {
   public discordURL = 'https://discord.gg/3D6RN4k3FB';
   public activeNavBar = 'home';
 
-  public showErrorMessage(): void {
-    this.showMintMessage = true;
+  constructor(private toastr: ToastrService) {}
+
+  public mintClicked(): void {
+    this.toastr.error('', 'Coming soon...');
   }
+
   public openDiscord(): void {
     window.open(this.discordURL, '_blank');
-  }
-  public hideMintMessage(): void {
-    this.showMintMessage = false;
   }
 
   public navElementClicked(newActiveNavElement: string): void {
