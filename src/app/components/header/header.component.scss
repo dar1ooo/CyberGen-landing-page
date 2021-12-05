@@ -109,6 +109,19 @@
     animation: flickermagenta 2s infinite alternate;
   }
 }
+@media (min-width: 1700px) {
+  .hero h1{
+    font-size: 110px;
+  }
+  .logo-main{
+    width: 50%;
+  }
+  .mint-button, .discord-button{
+    font-size: 4rem;
+  }
+}
+
+
 @media (max-width: 1700px) {
   .hero-btns {
     margin-bottom: 200px;
