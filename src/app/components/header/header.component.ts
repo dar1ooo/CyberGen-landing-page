@@ -11,7 +11,7 @@ export class HeaderComponent {
   public showMintMessage = false;
   public discordURL = 'https://discord.gg/3D6RN4k3FB';
   public activeNavBar = 'home';
-
+  private yOffset: number = 0;
   constructor(private toastr: ToastrService) {}
 
   public mintClicked(): void {
@@ -26,9 +26,13 @@ export class HeaderComponent {
     this.activeNavBar = newActiveNavElement;
     const element = document.getElementById(newActiveNavElement);
     if (element) {
-      const yOffset = -100;
+      if (newActiveNavElement === 'about-us') {
+        this.yOffset = -200;
+      } else {
+        this.yOffset = 50;
+      }
       const y =
-        element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        element.getBoundingClientRect().top + window.pageYOffset + this.yOffset;
 
       window.scrollTo({ top: y, behavior: 'smooth' });
     }

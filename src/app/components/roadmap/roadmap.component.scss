@@ -1,27 +1,24 @@
-.sub-title {
-  color: #fc32aa;
-}
-
-.ai-image {
+.roadmap-image {
   margin: 5% 0px;
   height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 80%;
 }
+
 @media (max-width: 1199px) {
-  .footer-basic .social img {
-    width: 4%;
+  .roadmap-image {
+    width: 90%;
   }
 }
 @media (max-width: 991px) {
-  .footer-basic .social img {
-    width: 5%;
+  .roadmap-image {
+    width: 90%;
   }
 }
 @media (max-width: 575px) {
-  .footer-basic .social img {
-    width: 10%;
+  .roadmap-image {
+    width: 90%;
   }
 }

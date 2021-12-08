@@ -12,6 +12,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { RoadmapComponent } from './components/roadmap/roadmap.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ToastrModule } from 'ngx-toastr';
     TeamComponent,
     HeaderComponent,
     FooterComponent,
+    RoadmapComponent,
   ],
   imports: [
     BrowserModule,
