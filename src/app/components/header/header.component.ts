@@ -1,6 +1,5 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
-
 @Component({
   selector: 'cyber-header-component',
   templateUrl: './header.component.html',
@@ -9,13 +8,20 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class HeaderComponent {
   public showMintMessage = false;
-  public discordURL = 'https://discord.gg/3D6RN4k3FB';
+  public discordURL = 'https://discord.gg/cybergen';
+  public mintURl = 'https://mint.cybergen.io/';
+  public shopURL = 'https://cybergen.io/';
   public activeNavBar = 'home';
   private yOffset: number = 0;
   constructor(private toastr: ToastrService) {}
 
   public mintClicked(): void {
-    this.toastr.error('', 'Coming soon...');
+    window.open(this.mintURl, '_blank');
+  }
+
+  public shopClicked(): void {
+    // window.open(this.shopURL, '_blank');
+    this.toastr.info('CyberShop is coming soon');
   }
 
   public openDiscord(): void {
@@ -38,3 +44,4 @@ export class HeaderComponent {
     }
   }
 }
+

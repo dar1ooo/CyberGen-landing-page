@@ -67,6 +67,10 @@
 }
 
 @media (max-width: 991px) {
+  p {
+    font-size: 1.1rem !important;
+  }
+
   .navbar {
     padding: 15px 0 0 0;
   }
@@ -112,7 +116,6 @@
 
     text-align: center;
   }
-
 
   .contact {
     text-align: center;
@@ -161,13 +164,10 @@
   }
 
   .hero-btns a {
-    &:first-child,
-    &:last-child {
-      font-size: 0.8rem;
-      display: block;
-      width: 70%;
-      margin: 0 auto;
-    }
+    font-size: 0.8rem;
+    display: block;
+    width: 70%;
+    margin: 0 auto;
   }
 
   footer h3 {

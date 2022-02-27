@@ -5,7 +5,8 @@
 
 #home {
   padding-bottom: 15%;
-  background: url('../../../assets/images/other/mainbackground.jpg') no-repeat 37% 50%;
+  background: url("../../../assets/images/other/mainbackground.jpg") no-repeat
+    37% 50%;
   background-size: cover;
 }
 
@@ -52,6 +53,7 @@
 .logo-main {
   height: auto;
   width: 30vw;
+  margin-bottom: 10%;
 }
 
 .discord-button {
@@ -110,17 +112,17 @@
   }
 }
 @media (min-width: 1700px) {
-  .hero h1{
+  .hero h1 {
     font-size: 110px;
   }
-  .logo-main{
+  .logo-main {
     width: 50%;
   }
-  .mint-button, .discord-button{
-    font-size: 4rem;
+  .mint-button,
+  .discord-button {
+    font-size: 3rem;
   }
 }
-
 
 @media (max-width: 1700px) {
   .hero-btns {
@@ -182,14 +184,11 @@
     padding: 15px 0 0 0;
   }
   .hero-btns a {
-    &:first-child,
-    &:last-child {
-      font-size: 2rem;
-      display: block;
-      width: 70%;
-      margin: 0 auto;
-      margin-top: 10%;
-    }
+    font-size: 2rem;
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10%;
   }
   .hero {
     img {
@@ -203,10 +202,7 @@
     }
   }
   .hero-btns a {
-    &:first-child,
-    &:last-child {
-      margin-top: 10%;
-    }
+    margin-top: 10%;
   }
 
   .navbar-collapse {
