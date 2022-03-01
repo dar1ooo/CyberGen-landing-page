@@ -10,7 +10,7 @@ export class HeaderComponent {
   public showMintMessage = false;
   public discordURL = 'https://discord.gg/cybergen';
   public mintURl = 'https://mint.cybergen.io/';
-  public shopURL = 'https://cybergen.io/';
+  public shopURL = 'https://shop.cybergen.io/';
   public activeNavBar = 'home';
   private yOffset: number = 0;
   constructor(private toastr: ToastrService) {}
@@ -20,8 +20,7 @@ export class HeaderComponent {
   }
 
   public shopClicked(): void {
-    // window.open(this.shopURL, '_blank');
-    this.toastr.info('CyberShop is coming soon');
+    window.open(this.shopURL, '_blank');
   }
 
   public openDiscord(): void {
